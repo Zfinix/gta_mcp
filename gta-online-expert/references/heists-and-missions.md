@@ -5,6 +5,7 @@
 **Goal:** infiltrate solo, stealth, grab secondary loot + primary target, exfil. ~$1.1M+ per run.
 
 **Prep order:**
+
 1. **Buy the Kosatka** (~$2.2M one-time) → start the heist from its planning screen (~$100k setup).
 2. **Scope out the island** (the recon mission): mark guard clothing, a compound entry point, the grappling/cutting equipment, and the power station/control tower. Take photos of everything; this unlocks options. Scoping persists, so you only fully scope once.
 3. **Gather equipment prep jobs:** typically *Cutting Torch / Grappling Equipment*, *Plasma Cutter or Bolt Cutters* (for secondary loot doors), and the *Approach* (drainage tunnel is the classic stealth entry). Optionally grab the *Sewer/Drainage* entry and disable *Air Defenses* if you want fewer alarms.
@@ -16,6 +17,7 @@
    - **Exfil** via the marked escape point (grappling spot, boat, or the main gate if loud) and swim/boat to the Kosatka.
 
 **Tips:**
+
 - Take a **suppressed weapon**, save your loadout. Headshot or avoid guards.
 - The **Panther Statue** (~$1.9M) rotates in occasionally and is the best primary — run it when available.
 - **Cooldown:** the finale has a replay cooldown; the same primary target is restricted for a longer window. Fill the cooldown with Agency contracts and business sells.

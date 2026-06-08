@@ -11,7 +11,9 @@ function emptyState(): BusinessState {
 export function loadState(): BusinessState {
   try {
     if (!existsSync(config.statePath)) return emptyState();
-    const parsed = JSON.parse(readFileSync(config.statePath, "utf8")) as BusinessState;
+    const parsed = JSON.parse(
+      readFileSync(config.statePath, "utf8"),
+    ) as BusinessState;
     if (!parsed.businesses) return emptyState();
     return parsed;
   } catch (err) {
@@ -28,7 +30,10 @@ export function saveState(state: BusinessState): void {
 }
 
 /** Upsert one owned business, merging with any existing tracked fields. */
-export function upsertBusiness(state: BusinessState, biz: OwnedBusiness): BusinessState {
+export function upsertBusiness(
+  state: BusinessState,
+  biz: OwnedBusiness,
+): BusinessState {
   state.businesses[biz.id] = { ...state.businesses[biz.id], ...biz };
   return state;
 }

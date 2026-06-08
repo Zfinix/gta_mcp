@@ -47,7 +47,9 @@ export async function browseFetchText(url: string): Promise<string> {
     return parseEvalResult(stdout);
   } catch (err: any) {
     if (err?.code === "ENOENT") {
-      throw new BrowseUnavailableError(`'${config.browseBin}' not found on PATH`);
+      throw new BrowseUnavailableError(
+        `'${config.browseBin}' not found on PATH`,
+      );
     }
     throw err;
   }

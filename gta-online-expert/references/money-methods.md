@@ -5,6 +5,7 @@ Figures are GTA$ and assume relevant upgrades. Verify a value with WebSearch if 
 ## TL;DR rankings
 
 **Active (effort required), best solo $/hr:**
+
 1. **Agency — Dr. Dre VIP + Payphone/Security loop** — Dre ≈ $1M / 90 min; payphone+security loop ≈ $450k/hr. Best all-around active solo.
 2. **Cayo Perico Heist** — ≈ $1.1M–2.3M per ~1 hr run, fully solo. Best per-run solo payout.
 3. **Diamond Casino Heist (Diamonds week, 2-player)** — ≈ $3.3M–3.6M/run, needs a partner.
@@ -14,6 +15,7 @@ Figures are GTA$ and assume relevant upgrades. Verify a value with WebSearch if 
 7. **Salvage Yard robberies** — ≈ $900k–1M but **capped at 3/week**.
 
 **Passive / semi-passive (low effort):**
+
 1. **Acid Lab** — ≈ $120k/hr passive, sell from anywhere. Best solo passive.
 2. **Nightclub (techs + safe)** — ≈ $60k–100k/hr accrued while you do other content. Best AFK earner.
 3. **Bunker** — ≈ $52k/hr passive.

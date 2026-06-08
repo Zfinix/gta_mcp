@@ -20,7 +20,8 @@ export async function trpcQuery<T = unknown>(
     url += `?input=${encodeURIComponent(JSON.stringify(input))}`;
   }
   const env = await fetchJson<TrpcEnvelope<T>>(url);
-  if (env.error) throw new Error(`gtalens tRPC error for ${router}.${procedure}`);
+  if (env.error)
+    throw new Error(`gtalens tRPC error for ${router}.${procedure}`);
   if (!env.result || env.result.data === undefined) {
     throw new Error(`gtalens tRPC empty result for ${router}.${procedure}`);
   }

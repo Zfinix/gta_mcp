@@ -7,7 +7,9 @@ import { formatDuration } from "../lib/resets.js";
 
 function toBusinessKey(s: string): string | undefined {
   const q = s.toLowerCase();
-  const direct = Object.keys(BUSINESS_KEYS).find((k) => q.startsWith(k) || k.startsWith(q.slice(0, 4)));
+  const direct = Object.keys(BUSINESS_KEYS).find(
+    (k) => q.startsWith(k) || k.startsWith(q.slice(0, 4)),
+  );
   if (direct) return direct;
   if (q.includes("acid")) return "acid";
   if (q.includes("bunk") || q.includes("gun")) return "bunk";
@@ -20,19 +22,45 @@ function toBusinessKey(s: string): string | undefined {
 }
 
 export function registerCalculatorTools(server: McpServer): void {
-  server.tool(
+  server.registerTool(
     "gta-sell-calculator",
-    "Calculate a GTA Online business sell value with the high-demand public-lobby bonus (+2.5%/rival player, cap +50%) and an optional weekly 2x/3x multiplier. Uses live economy data.",
     {
-      business: z.string().describe("Business name (acid, bunker, cocaine, meth, counterfeit, weed, docs)"),
-      players: z.number().int().min(0).max(29).default(0).describe("Rival players in the public lobby (0 = sell solo/private)"),
-      bonusMultiplier: z.number().min(1).max(4).default(1).describe("Weekly event multiplier, e.g. 2 for a 2x week"),
+      description:
+        "Calculate a GTA Online business sell value with the high-demand public-lobby bonus (+2.5%/rival player, cap +50%) and an optional weekly 2x/3x multiplier. Uses live economy data.",
+      inputSchema: {
+        business: z
+          .string()
+          .describe(
+            "Business name (acid, bunker, cocaine, meth, counterfeit, weed, docs)",
+          ),
+        players: z
+          .number()
+          .int()
+          .min(0)
+          .max(29)
+          .default(0)
+          .describe(
+            "Rival players in the public lobby (0 = sell solo/private)",
+          ),
+        bonusMultiplier: z
+          .number()
+          .min(1)
+          .max(4)
+          .default(1)
+          .describe("Weekly event multiplier, e.g. 2 for a 2x week"),
+      },
     },
     async ({ business, players, bonusMultiplier }) => {
       const key = toBusinessKey(business);
       const econ = key ? getEconomics(key) : undefined;
-      if (!econ) return errorText(`Unknown business "${business}". Valid: ${Object.values(BUSINESS_KEYS).join(", ")}`);
-      const hdPct = Math.min(players * econ.highDemandPerPlayer, econ.maxHighDemandPct);
+      if (!econ)
+        return errorText(
+          `Unknown business "${business}". Valid: ${Object.values(BUSINESS_KEYS).join(", ")}`,
+        );
+      const hdPct = Math.min(
+        players * econ.highDemandPerPlayer,
+        econ.maxHighDemandPct,
+      );
       const base = econ.fullValueLocal;
       const value = Math.round(base * (1 + hdPct / 100) * bonusMultiplier);
       return text(
@@ -53,20 +81,38 @@ export function registerCalculatorTools(server: McpServer): void {
     },
   );
 
-  server.tool(
+  server.registerTool(
     "gta-payback-calculator",
-    "Estimate how long a GTA Online property pays for itself: hours/runs to recoup the buy-in given a method's $/hr.",
     {
-      buyIn: z.number().optional().describe("Property cost; omit to use the method's buy-in"),
-      method: z.string().describe("Method id/name to earn with (e.g. cayo-perico, agency-contracts-loop)"),
+      description:
+        "Estimate how long a GTA Online property pays for itself: hours/runs to recoup the buy-in given a method's $/hr.",
+      inputSchema: {
+        buyIn: z
+          .number()
+          .optional()
+          .describe("Property cost; omit to use the method's buy-in"),
+        method: z
+          .string()
+          .describe(
+            "Method id/name to earn with (e.g. cayo-perico, agency-contracts-loop)",
+          ),
+      },
     },
     async ({ buyIn, method }) => {
       const m = findMethod(method);
-      if (!m) return errorText(`No method matching "${method}". See gta-best-methods.`);
+      if (!m)
+        return errorText(
+          `No method matching "${method}". See gta-best-methods.`,
+        );
       const cost = buyIn ?? m.buyIn;
-      if (!cost) return text(`${m.name} has no buy-in to pay back. It nets ~${money(m.estPerHour)}/hr.`);
+      if (!cost)
+        return text(
+          `${m.name} has no buy-in to pay back. It nets ~${money(m.estPerHour)}/hr.`,
+        );
       const hours = cost / m.estPerHour;
-      const runs = m.estMinutes ? Math.ceil(cost / Math.max(1, (m.estPerHour * m.estMinutes) / 60)) : null;
+      const runs = m.estMinutes
+        ? Math.ceil(cost / Math.max(1, (m.estPerHour * m.estMinutes) / 60))
+        : null;
       return text(
         [
           `Paying back ${money(cost)} with ${m.name} (~${money(m.estPerHour)}/hr):`,
@@ -79,10 +125,13 @@ export function registerCalculatorTools(server: McpServer): void {
     },
   );
 
-  server.tool(
+  server.registerTool(
     "gta-cayo-targets",
-    "List the GTA Online Cayo Perico Heist primary targets and their payouts (normal and hard mode), plus secondary loot values.",
-    {},
+    {
+      description:
+        "List the GTA Online Cayo Perico Heist primary targets and their payouts (normal and hard mode), plus secondary loot values.",
+      inputSchema: {},
+    },
     async () => {
       return text(
         [
@@ -102,28 +151,43 @@ export function registerCalculatorTools(server: McpServer): void {
     },
   );
 
-  server.tool(
+  server.registerTool(
     "gta-collectible-sets",
-    "List GTA Online one-time collectible sets and their completion rewards (Signal Jammers, Playing Cards, Action Figures, etc.).",
-    {},
+    {
+      description:
+        "List GTA Online one-time collectible sets and their completion rewards (Signal Jammers, Playing Cards, Action Figures, etc.).",
+      inputSchema: {},
+    },
     async () => {
-      const sets = getReference().collectibles.filter((c) => c.kind === "oneTime");
-      const lines = sets.map((c) => `- ${c.name} (${c.count}): ${money(c.rewardTotal ?? 0)} — ${c.notes}`);
+      const sets = getReference().collectibles.filter(
+        (c) => c.kind === "oneTime",
+      );
+      const lines = sets.map(
+        (c) =>
+          `- ${c.name} (${c.count}): ${money(c.rewardTotal ?? 0)} — ${c.notes}`,
+      );
       return text(`One-time collectible sets:\n\n${lines.join("\n")}`);
     },
   );
 
-  server.tool(
+  server.registerTool(
     "gta-daily-checklist",
-    "The optimal GTA Online daily money routine: every daily-reset task with its payout and the running total (~$300k+/day).",
-    {},
+    {
+      description:
+        "The optimal GTA Online daily money routine: every daily-reset task with its payout and the running total (~$300k+/day).",
+      inputSchema: {},
+    },
     async () => {
       const ref = getReference();
       const daily = ref.collectibles.filter((c) => c.kind === "daily");
       const collTotal = daily.reduce((s, c) => s + (c.dailyTotal ?? 0), 0);
-      const lines = daily.map((c) => `- [ ] ${c.name}: ${money(c.dailyTotal ?? 0)}`);
+      const lines = daily.map(
+        (c) => `- [ ] ${c.name}: ${money(c.dailyTotal ?? 0)}`,
+      );
       const recurring = ref.recurring.map((r) => {
-        const amt = r.payout ? ` (${money(r.payout)}${r.weeklyBonus ? `, +${money(r.weeklyBonus)}/week for 3` : ""})` : "";
+        const amt = r.payout
+          ? ` (${money(r.payout)}${r.weeklyBonus ? `, +${money(r.weeklyBonus)}/week for 3` : ""})`
+          : "";
         return `- [ ] ${r.name}${amt} — ${r.notes}`;
       });
       return text(

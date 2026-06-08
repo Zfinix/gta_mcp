@@ -14,10 +14,15 @@ const here = dirname(fileURLToPath(import.meta.url));
 const dataDir = resolve(here, "..", "data");
 const browseBin = process.env.BROWSE_BIN || "browse";
 
-const ZOOM = Number(process.env.MAP_ZOOM || 4);
+const ZOOM = Number(process.env.MAP_ZOOM || 5);
 const TILE = 256;
 const BASE = `https://s.rsg.sc/sc/images/games/GTAV/map/game/${ZOOM}`;
-const RANGE = Math.max(6, 2 ** ZOOM); // search radius for tile indices
+// The map's tile bbox at zoom 4 is x[0..7] y[0..10]; every higher zoom doubles
+// it and covers the EXACT same world extent, so the projection constants in
+// mapRender.ts stay valid regardless of zoom. Compute the bbox directly to avoid
+// a slow/flaky probe.
+const F = 2 ** Math.max(0, ZOOM - 4);
+const XMIN = 0, YMIN = 0, XMAX = 8 * F - 1, YMAX = 11 * F - 1;
 
 async function run(args, timeout = 120000) {
   const { stdout } = await execFileAsync(browseBin, args, { timeout, maxBuffer: 512 * 1024 * 1024 });

@@ -1,7 +1,8 @@
 // Shared formatting helpers for tool output.
 
 export function money(n: number): string {
-  if (n >= 1_000_000) return `$${(n / 1_000_000).toFixed(n % 1_000_000 === 0 ? 0 : 2)}M`;
+  if (n >= 1_000_000)
+    return `$${(n / 1_000_000).toFixed(n % 1_000_000 === 0 ? 0 : 2)}M`;
   if (n >= 1_000) return `$${Math.round(n / 1_000)}k`;
   return `$${n}`;
 }
@@ -11,7 +12,9 @@ export function moneyRange(min: number, max: number): string {
 }
 
 /** Standard MCP text-content result. */
-export function text(body: string): { content: { type: "text"; text: string }[] } {
+export function text(body: string): {
+  content: { type: "text"; text: string }[];
+} {
   return { content: [{ type: "text", text: body }] };
 }
 

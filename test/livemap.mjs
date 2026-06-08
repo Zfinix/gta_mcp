@@ -1,0 +1,10 @@
+import { Client } from "@modelcontextprotocol/sdk/client/index.js";
+import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
+import { fileURLToPath } from "node:url"; import { dirname, resolve } from "node:path";
+const here = dirname(fileURLToPath(import.meta.url));
+const t = new StdioClientTransport({ command:"node", args:[resolve(here,"..","build","server.js")], env:{...process.env,BROWSE_FALLBACK:"1"} });
+const c = new Client({name:"lm",version:"1.0.0"},{capabilities:{}}); await c.connect(t);
+console.log("HAS gta-live-map:", (await c.listTools()).tools.some(x=>x.name==="gta-live-map"), "| total:", (await c.listTools()).tools.length);
+const r = await c.callTool({name:"gta-live-map",arguments:{category:"street-dealers"}});
+console.log((r.content||[]).map(x=>x.text).join("\n").slice(0,900));
+await c.close(); process.exit(0);

@@ -61,7 +61,7 @@ Register in Claude Desktop / Cursor (`mcpServers`):
   "mcpServers": {
     "gta": {
       "command": "node",
-      "args": ["/Users/chizi/projects/work-projects/mcp/gta_mcp/build/server.js"],
+      "args": ["./build/server.js"],
       "env": { "BROWSE_FALLBACK": "1" }
     }
   }

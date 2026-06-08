@@ -38,7 +38,8 @@ async function once(url: string, opts: FetchOpts): Promise<string> {
       signal: controller.signal,
     });
     const text = await res.text();
-    if (looksLikeCloudflare(res.status, text)) throw new CloudflareBlockedError(url);
+    if (looksLikeCloudflare(res.status, text))
+      throw new CloudflareBlockedError(url);
     if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
     return text;
   } finally {
@@ -46,7 +47,10 @@ async function once(url: string, opts: FetchOpts): Promise<string> {
   }
 }
 
-export async function fetchText(url: string, opts: FetchOpts = {}): Promise<string> {
+export async function fetchText(
+  url: string,
+  opts: FetchOpts = {},
+): Promise<string> {
   const retries = opts.retries ?? 2;
   let lastErr: unknown;
   for (let attempt = 0; attempt <= retries; attempt++) {
@@ -55,13 +59,17 @@ export async function fetchText(url: string, opts: FetchOpts = {}): Promise<stri
     } catch (err) {
       if (err instanceof CloudflareBlockedError) throw err; // don't retry CF
       lastErr = err;
-      if (attempt < retries) await new Promise((r) => setTimeout(r, 400 * (attempt + 1)));
+      if (attempt < retries)
+        await new Promise((r) => setTimeout(r, 400 * (attempt + 1)));
     }
   }
   throw lastErr;
 }
 
-export async function fetchJson<T = unknown>(url: string, opts: FetchOpts = {}): Promise<T> {
+export async function fetchJson<T = unknown>(
+  url: string,
+  opts: FetchOpts = {},
+): Promise<T> {
   const text = await fetchText(url, opts);
   return JSON.parse(text) as T;
 }

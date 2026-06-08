@@ -16,7 +16,11 @@ function coordsDir(): string {
   return resolve(config.dataDir, "coords");
 }
 
-export function listCoordSets(): { category: string; name: string; count: number }[] {
+export function listCoordSets(): {
+  category: string;
+  name: string;
+  count: number;
+}[] {
   const dir = coordsDir();
   if (!existsSync(dir)) return [];
   return readdirSync(dir)
@@ -44,7 +48,11 @@ export function getCoordSet(category: string): CoordSet | undefined {
     if (!f.endsWith(".json")) continue;
     try {
       const c = JSON.parse(readFileSync(resolve(dir, f), "utf8")) as CoordSet;
-      if (c.category.toLowerCase() === q || c.category.toLowerCase().includes(q)) return c;
+      if (
+        c.category.toLowerCase() === q ||
+        c.category.toLowerCase().includes(q)
+      )
+        return c;
     } catch {
       /* ignore */
     }

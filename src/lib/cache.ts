@@ -20,7 +20,8 @@ function diskPath(key: string): string {
 }
 
 function ensureCacheDir(): void {
-  if (!existsSync(config.cacheDir)) mkdirSync(config.cacheDir, { recursive: true });
+  if (!existsSync(config.cacheDir))
+    mkdirSync(config.cacheDir, { recursive: true });
 }
 
 function readDisk<T>(key: string): Entry<T> | undefined {
@@ -50,7 +51,10 @@ export interface CacheResult<T> {
 }
 
 export function paramsHash(params: unknown): string {
-  return createHash("sha1").update(JSON.stringify(params ?? {})).digest("hex").slice(0, 10);
+  return createHash("sha1")
+    .update(JSON.stringify(params ?? {}))
+    .digest("hex")
+    .slice(0, 10);
 }
 
 /**
@@ -69,19 +73,34 @@ export async function withCache<T>(
 
   const cached = (mem.get(key) as Entry<T> | undefined) ?? readDisk<T>(key);
   if (cached && cached.expiresAt > now && cached.windowKey === windowKey) {
-    return { value: cached.value, fresh: true, storedAt: cached.storedAt, windowKey };
+    return {
+      value: cached.value,
+      fresh: true,
+      storedAt: cached.storedAt,
+      windowKey,
+    };
   }
 
   try {
     const value = await fetcher();
-    const entry: Entry<T> = { value, storedAt: now, expiresAt: now + ttlMs, windowKey };
+    const entry: Entry<T> = {
+      value,
+      storedAt: now,
+      expiresAt: now + ttlMs,
+      windowKey,
+    };
     mem.set(key, entry);
     writeDisk(key, entry);
     return { value, fresh: true, storedAt: now, windowKey };
   } catch (err) {
     if (cached) {
       console.error(`[cache] ${source} fetch failed, serving stale:`, err);
-      return { value: cached.value, fresh: false, storedAt: cached.storedAt, windowKey: cached.windowKey };
+      return {
+        value: cached.value,
+        fresh: false,
+        storedAt: cached.storedAt,
+        windowKey: cached.windowKey,
+      };
     }
     throw err;
   }

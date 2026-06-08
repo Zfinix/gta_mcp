@@ -10,7 +10,12 @@ import { config } from "../config.js";
 const TOP_LEFT = [-2866, 6780]; // [x, y] game coords at pixel (0,0)
 const BOTTOM_RIGHT = [4560, -3430]; // [x, y] game coords at pixel (W,H)
 
-export function projectGame(x: number, y: number, w: number, h: number): [number, number] {
+export function projectGame(
+  x: number,
+  y: number,
+  w: number,
+  h: number,
+): [number, number] {
   const px = ((x - TOP_LEFT[0]) / (BOTTOM_RIGHT[0] - TOP_LEFT[0])) * w;
   const py = ((y - TOP_LEFT[1]) / (BOTTOM_RIGHT[1] - TOP_LEFT[1])) * h;
   return [px, py];
@@ -29,11 +34,15 @@ export interface RenderOptions {
 
 let basePromise: Promise<Awaited<ReturnType<typeof loadImage>>> | undefined;
 function loadBase() {
-  if (!basePromise) basePromise = loadImage(resolve(config.dataDir, "basemap.jpg"));
+  if (!basePromise)
+    basePromise = loadImage(resolve(config.dataDir, "basemap.jpg"));
   return basePromise;
 }
 
-export async function renderMap(points: MapPoint[], opts: RenderOptions = {}): Promise<Buffer> {
+export async function renderMap(
+  points: MapPoint[],
+  opts: RenderOptions = {},
+): Promise<Buffer> {
   const base = await loadBase();
   const w = base.width;
   const h = base.height;

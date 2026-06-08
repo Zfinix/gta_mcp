@@ -14,10 +14,13 @@ import { withCache } from "../lib/cache.js";
 import { text } from "../lib/format.js";
 
 export function registerLiveDataTools(server: McpServer): void {
-  server.tool(
+  server.registerTool(
     "gta-reset-times",
-    "Time remaining until the GTA Online daily reset (06:00 UTC) and weekly reset (Thursday 07:00 UTC). Pure computation, always available.",
-    {},
+    {
+      description:
+        "Time remaining until the GTA Online daily reset (06:00 UTC) and weekly reset (Thursday 07:00 UTC). Pure computation, always available.",
+      inputSchema: {},
+    },
     async () => {
       const now = new Date();
       const daily = nextDailyReset(now);
@@ -34,11 +37,16 @@ export function registerLiveDataTools(server: McpServer): void {
     },
   );
 
-  server.tool(
+  server.registerTool(
     "gta-tunables-status",
-    "Per-platform timestamps of the last GTA Online tunables update from gtaweb (a daily-reset / new-content signal). Requires the browser fallback; degrades gracefully if unavailable.",
     {
-      platform: z.enum(["pcros", "pcrosalt", "ps4", "ps5", "xboxone", "xboxsx"]).optional(),
+      description:
+        "Per-platform timestamps of the last GTA Online tunables update from gtaweb (a daily-reset / new-content signal). Requires the browser fallback; degrades gracefully if unavailable.",
+      inputSchema: {
+        platform: z
+          .enum(["pcros", "pcrosalt", "ps4", "ps5", "xboxone", "xboxsx"])
+          .optional(),
+      },
     },
     async ({ platform }) => {
       try {
@@ -54,7 +62,9 @@ export function registerLiveDataTools(server: McpServer): void {
           .map(([k, v]) => `- ${k}: ${new Date(v * 1000).toUTCString()}`)
           .join("\n");
         const freshness = res.fresh ? "" : "\n(⚠️ cached — live fetch failed)";
-        return text(`Tunables last modified per platform:\n${entries}${freshness}`);
+        return text(
+          `Tunables last modified per platform:\n${entries}${freshness}`,
+        );
       } catch (err) {
         return text(
           `Tunables status unavailable: ${(err as Error).message}.\n` +
@@ -64,19 +74,29 @@ export function registerLiveDataTools(server: McpServer): void {
     },
   );
 
-  server.tool(
+  server.registerTool(
     "gta-weekly-bonuses",
-    "This week's GTA Online event from the Rockstar Newswire: the weekly update title, 2x/3x bonus activities, podium vehicle, and discounts. Cached per weekly window; serves stale data with a note if the fetch fails.",
-    {},
+    {
+      description:
+        "This week's GTA Online event from the Rockstar Newswire: the weekly update title, 2x/3x bonus activities, podium vehicle, and discounts. Cached per weekly window; serves stale data with a note if the fetch fails.",
+      inputSchema: {},
+    },
     async () => {
       try {
         const ttl = Math.max(60 * 60000, msUntil(nextWeeklyReset()));
-        const res = await withCache("newswire-weekly", currentWeeklyWindowKey(), ttl, getWeeklyUpdate);
+        const res = await withCache(
+          "newswire-weekly",
+          currentWeeklyWindowKey(),
+          ttl,
+          getWeeklyUpdate,
+        );
         const w = res.value;
         const bonuses = w.bonuses.length
           ? w.bonuses.map((b) => `- ${b}`).join("\n")
           : "(Could not parse individual bonus lines — open the article for the full list.)";
-        const freshness = res.fresh ? "" : "\n\n⚠️ Live fetch failed; showing the last cached weekly update.";
+        const freshness = res.fresh
+          ? ""
+          : "\n\n⚠️ Live fetch failed; showing the last cached weekly update.";
         return text(
           [
             `# ${w.title}`,

@@ -45,9 +45,18 @@ export function getEconomics(key: string): Economics | undefined {
   const mc = t?.current?.mc?.[key];
   if (!mc) return undefined;
   const hdKeyMap: Record<string, string> = {
-    acid: "acid", bunk: "bunk", coke: "mc", meth: "mc", cash: "mc", weed: "mc", docs: "mc",
+    acid: "acid",
+    bunk: "bunk",
+    coke: "mc",
+    meth: "mc",
+    cash: "mc",
+    weed: "mc",
+    docs: "mc",
   };
-  const hd = t?.current?.hdbc?.[hdKeyMap[key] ?? "mc"] ?? { per: "2.5", cap: "20" };
+  const hd = t?.current?.hdbc?.[hdKeyMap[key] ?? "mc"] ?? {
+    per: "2.5",
+    cap: "20",
+  };
   const per = Number(hd.per);
   const cap = Number(hd.cap);
   const unitValue = Number(mc.value);

@@ -3,21 +3,31 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { config } from "../config.js";
-import type { ReferenceData, Method, Business, Collectible, MapCategory } from "../types.js";
+import type {
+  ReferenceData,
+  Method,
+  Business,
+  Collectible,
+  MapCategory,
+} from "../types.js";
 
 let cached: ReferenceData | undefined;
 let mapCached: MapCategory[] | undefined;
 
 export function getReference(): ReferenceData {
   if (cached) return cached;
-  cached = JSON.parse(readFileSync(config.referencePath, "utf8")) as ReferenceData;
+  cached = JSON.parse(
+    readFileSync(config.referencePath, "utf8"),
+  ) as ReferenceData;
   return cached;
 }
 
 export function getMapCategories(): MapCategory[] {
   if (mapCached) return mapCached;
   const path = resolve(config.dataDir, "map-categories.json");
-  const parsed = JSON.parse(readFileSync(path, "utf8")) as { categories: MapCategory[] };
+  const parsed = JSON.parse(readFileSync(path, "utf8")) as {
+    categories: MapCategory[];
+  };
   mapCached = parsed.categories;
   return mapCached;
 }

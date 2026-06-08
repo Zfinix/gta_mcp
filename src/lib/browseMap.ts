@@ -23,7 +23,10 @@ export function gtalensMapUrl(slug: string): string {
 }
 
 async function openMap(slug: string): Promise<void> {
-  await runBrowse(["open", gtalensMapUrl(slug), "--wait", "networkidle"], 60000);
+  await runBrowse(
+    ["open", gtalensMapUrl(slug), "--wait", "networkidle"],
+    60000,
+  );
 }
 
 export interface MapCapture {
@@ -33,9 +36,13 @@ export interface MapCapture {
 
 /** Open the gtalens map for a category and capture a PNG screenshot. */
 export async function captureMap(slug: string): Promise<MapCapture> {
-  if (!config.browseFallback) throw new Error("browser fallback disabled (BROWSE_FALLBACK=0)");
+  if (!config.browseFallback)
+    throw new Error("browser fallback disabled (BROWSE_FALLBACK=0)");
   await openMap(slug);
-  const file = resolve(tmpdir(), `gta-map-${slug.replace(/[^a-z0-9-]/gi, "_")}-${process.pid}-${Date.now()}.png`);
+  const file = resolve(
+    tmpdir(),
+    `gta-map-${slug.replace(/[^a-z0-9-]/gi, "_")}-${process.pid}-${Date.now()}.png`,
+  );
   try {
     await runBrowse(["screenshot", "-p", file, "--type", "png"], 45000);
     const buf = readFileSync(file);
@@ -51,7 +58,8 @@ export async function captureMap(slug: string): Promise<MapCapture> {
 
 /** Extract the live location/price panel text from the current gtalens map. */
 export async function mapPanelText(slug: string): Promise<string> {
-  if (!config.browseFallback) throw new Error("browser fallback disabled (BROWSE_FALLBACK=0)");
+  if (!config.browseFallback)
+    throw new Error("browser fallback disabled (BROWSE_FALLBACK=0)");
   await openMap(slug);
   // Pull the data panel text out of the page. gtalens renders a right-hand panel
   // with "Location #N" headers and product/price tables; slice from there and

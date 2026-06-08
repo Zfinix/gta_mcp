@@ -30,7 +30,10 @@ function extractArticles(html: string): { title: string; url: string }[] {
   let m: RegExpExecArray | null;
   while ((m = re.exec(html))) {
     const url = m[1];
-    const title = m[2].replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+    const title = m[2]
+      .replace(/<[^>]+>/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
     if (!title || seen.has(url)) continue;
     seen.add(url);
     out.push({ url: absolute(url), title });
@@ -38,15 +41,29 @@ function extractArticles(html: string): { title: string; url: string }[] {
   return out;
 }
 
-function pickWeekly(articles: { title: string; url: string }[]): { title: string; url: string } | undefined {
-  const keywords = ["weekly update", "bonuses", "this week in gta", "discounts", "double"];
+function pickWeekly(
+  articles: { title: string; url: string }[],
+): { title: string; url: string } | undefined {
+  const keywords = [
+    "weekly update",
+    "bonuses",
+    "this week in gta",
+    "discounts",
+    "double",
+  ];
   return (
-    articles.find((a) => keywords.some((k) => a.title.toLowerCase().includes(k))) || articles[0]
+    articles.find((a) =>
+      keywords.some((k) => a.title.toLowerCase().includes(k)),
+    ) || articles[0]
   );
 }
 
 /** Extract bonus bullet lines and the podium vehicle from an article page. */
-function parseArticle(html: string): { summary: string; bonuses: string[]; podium?: string } {
+function parseArticle(html: string): {
+  summary: string;
+  bonuses: string[];
+  podium?: string;
+} {
   const text = html
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
     .replace(/<style[\s\S]*?<\/style>/gi, " ")
@@ -57,14 +74,17 @@ function parseArticle(html: string): { summary: string; bonuses: string[]; podiu
     .trim();
 
   const bonuses: string[] = [];
-  const bonusRe = /([A-Z][^.]{0,90}?(2X|3X|4X|Double|Triple|GTA\$ and RP)[^.]{0,90}?)\./g;
+  const bonusRe =
+    /([A-Z][^.]{0,90}?(2X|3X|4X|Double|Triple|GTA\$ and RP)[^.]{0,90}?)\./g;
   let m: RegExpExecArray | null;
   while ((m = bonusRe.exec(text)) && bonuses.length < 15) {
     const line = m[1].trim();
     if (line.length > 8) bonuses.push(line);
   }
 
-  const podiumMatch = text.match(/Podium (?:Vehicle|Car)[:\s-]+([A-Z][A-Za-z0-9 .'-]{2,40})/);
+  const podiumMatch = text.match(
+    /Podium (?:Vehicle|Car)[:\s-]+([A-Z][A-Za-z0-9 .'-]{2,40})/,
+  );
 
   return {
     summary: text.slice(0, 600),
@@ -86,7 +106,9 @@ export async function getWeeklyUpdate(): Promise<WeeklyUpdate> {
         bonuses: [],
       };
       try {
-        const articleHtml = await fetchText(picked.url, { accept: "text/html,*/*" });
+        const articleHtml = await fetchText(picked.url, {
+          accept: "text/html,*/*",
+        });
         parsed = parseArticle(articleHtml);
       } catch (err) {
         console.error("[newswire] article fetch failed:", err);

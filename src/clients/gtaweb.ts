@@ -18,7 +18,9 @@ export async function getTunablesStatus(): Promise<TunablesStatus> {
 
 /** Map marker category configuration. */
 export async function getMapConfig(lang = "en"): Promise<unknown> {
-  return browseFetchJson(`${BASE}/_sources/tunables_utils/MapConfig?lang=${lang}`);
+  return browseFetchJson(
+    `${BASE}/_sources/tunables_utils/MapConfig?lang=${lang}`,
+  );
 }
 
 /**
