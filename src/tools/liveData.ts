@@ -97,9 +97,14 @@ export function registerLiveDataTools(server: McpServer): void {
         const freshness = res.fresh
           ? ""
           : "\n\n⚠️ Live fetch failed; showing the last cached weekly update.";
+        const window =
+          w.startDate && w.endDate
+            ? `Active: ${w.startDate.slice(0, 10)} → ${w.endDate.slice(0, 10)}`
+            : null;
         return text(
           [
             `# ${w.title}`,
+            window,
             w.podiumVehicle ? `Podium vehicle: ${w.podiumVehicle}` : null,
             "",
             "Bonuses / highlights:",
