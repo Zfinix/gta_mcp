@@ -1,0 +1,23 @@
+import { Client } from "@modelcontextprotocol/sdk/client/index.js";
+import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
+import { fileURLToPath } from "node:url";
+import { dirname, resolve } from "node:path";
+const here = dirname(fileURLToPath(import.meta.url));
+const sp = resolve(here, "..", "build", "server.js");
+const t = new StdioClientTransport({ command: "node", args: [sp] });
+const c = new Client({ name: "smoke2", version: "1.0.0" }, { capabilities: {} });
+function show(title, res){ const txt=(res.content||[]).filter(x=>x.type==="text").map(x=>x.text).join("\n"); const imgs=(res.content||[]).filter(x=>x.type==="image").length; console.log(`\n===== ${title} =====\n${txt.slice(0,650)}${imgs?`\n[+${imgs} image]`:""}`); }
+await c.connect(t);
+const tools = await c.listTools();
+console.log("TOOL COUNT:", tools.tools.length);
+console.log(tools.tools.map(x=>x.name).join(", "));
+show("economics", await c.callTool({name:"gta-business-economics",arguments:{}}));
+show("sell-calc (cocaine,15 players,2x)", await c.callTool({name:"gta-sell-calculator",arguments:{business:"cocaine",players:15,bonusMultiplier:2}}));
+show("payback cayo", await c.callTool({name:"gta-payback-calculator",arguments:{method:"cayo-perico"}}));
+show("cayo-targets", await c.callTool({name:"gta-cayo-targets",arguments:{}}));
+show("mansion-info", await c.callTool({name:"gta-mansion-info",arguments:{}}));
+show("properties maxCost 1.5M", await c.callTool({name:"gta-properties",arguments:{maxCost:1500000}}));
+show("daily-checklist", await c.callTool({name:"gta-daily-checklist",arguments:{}}));
+show("map-categories moneyOnly", await c.callTool({name:"gta-map-categories",arguments:{moneyOnly:true}}));
+show("collectible-sets", await c.callTool({name:"gta-collectible-sets",arguments:{}}));
+await c.close(); console.log("\nSMOKE2 OK"); process.exit(0);

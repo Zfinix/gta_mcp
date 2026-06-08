@@ -1,0 +1,17 @@
+{
+  "category": "landmarks",
+  "name": "Notable Landmarks",
+  "source": "verified game coordinates",
+  "points": [
+    { "x": -75, "y": -820, "label": "Maze Bank Tower" },
+    { "x": -1037, "y": -2730, "label": "LS Int'l Airport" },
+    { "x": 711, "y": 1198, "label": "Vinewood Sign" },
+    { "x": 450, "y": 5566, "label": "Mount Chiliad" },
+    { "x": 1960, "y": 3740, "label": "Sandy Shores" },
+    { "x": -275, "y": 6635, "label": "Paleto Bay" },
+    { "x": -1850, "y": -1230, "label": "Del Perro Pier" },
+    { "x": 1100, "y": 220, "label": "Diamond Casino" },
+    { "x": -1604, "y": -1011, "label": "Vespucci Beach" },
+    { "x": 1571, "y": 3286, "label": "Alamo Sea" }
+  ]
+}

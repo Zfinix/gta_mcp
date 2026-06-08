@@ -1,0 +1,7 @@
+node_modules/
+build/
+data/cache/
+data/state.json
+*.log
+.env
+.DS_Store

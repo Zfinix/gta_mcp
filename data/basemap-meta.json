@@ -1,0 +1,11 @@
+{
+  "source": "s.rsg.sc GTAV game tiles",
+  "zoom": 4,
+  "tile": 256,
+  "xmin": 0,
+  "xmax": 7,
+  "ymin": 0,
+  "ymax": 10,
+  "width": 2048,
+  "height": 2816
+}

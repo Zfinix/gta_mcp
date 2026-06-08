@@ -1,0 +1,30 @@
+{
+  "name": "gta-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for GTA Online money-making optimization (live weekly bonuses, daily collectibles, business operations, and a session planner)",
+  "type": "module",
+  "bin": {
+    "gta-mcp": "build/server.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/server.js",
+    "dev": "tsx src/server.ts",
+    "dev:inspect": "npx @modelcontextprotocol/inspector tsx src/server.ts",
+    "inspect": "npm run build && npx @modelcontextprotocol/inspector node build/server.js",
+    "smoke": "npm run build && node test/smoke.mjs && node test/smoke2.mjs",
+    "refresh:toolkit": "node scripts/refresh-toolkit.mjs",
+    "refresh:map": "node scripts/gen-map-categories.mjs",
+    "build:basemap": "node scripts/build-basemap.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "@napi-rs/canvas": "^0.1.100",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.0.0"
+  }
+}

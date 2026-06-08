@@ -1,0 +1,775 @@
+{
+  "source": "gtalens.com/map",
+  "categories": [
+    {
+      "slug": "street-dealers",
+      "name": "Street Dealers",
+      "group": "money-activities",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "gun-vans",
+      "name": "Gun Van",
+      "group": "money-activities",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "recent-dlc",
+      "name": "A Safehouse in the Hills",
+      "group": "other",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "golden-clovers",
+      "name": "Golden Clovers",
+      "group": "daily-collectibles",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "lucky-clovers",
+      "name": "Lucky Clovers",
+      "group": "daily-collectibles",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "daily-collectibles",
+      "name": "Daily Collectibles",
+      "group": "daily-collectibles",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "smoke-on-the-water-products",
+      "name": "Smoke on the Water Products",
+      "group": "daily-collectibles",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "ls-tags",
+      "name": "LS Tags",
+      "group": "daily-collectibles",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "buried-stashes",
+      "name": "Buried Stashes",
+      "group": "daily-collectibles",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "ship-wrecks",
+      "name": "Shipwrecks",
+      "group": "daily-collectibles",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "cayo-treasure-chests",
+      "name": "Treasure Chests",
+      "group": "cayo-heist",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "hidden-caches",
+      "name": "Hidden Caches",
+      "group": "daily-collectibles",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "daily-activities",
+      "name": "Daily Activities",
+      "group": "other",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "madrazo-hits",
+      "name": "Madrazo Hits",
+      "group": "money-activities",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "gs-caches",
+      "name": "G's Caches",
+      "group": "daily-collectibles",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "stash-houses",
+      "name": "Stash Houses",
+      "group": "money-activities",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "junk-energy-skydives",
+      "name": "Junk Energy Skydives",
+      "group": "daily-collectibles",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "regular-collectibles",
+      "name": "Collectibles",
+      "group": "collectibles",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "ld-organics-products",
+      "name": "LD Organics Products",
+      "group": "collectibles",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "media-sticks",
+      "name": "Media Sticks",
+      "group": "collectibles",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "movie-props",
+      "name": "Movie Props",
+      "group": "collectibles",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "signal-jammers",
+      "name": "Signal Jammers",
+      "group": "collectibles",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "action-figures",
+      "name": "Action Figures",
+      "group": "collectibles",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "playing-cards",
+      "name": "Playing Cards",
+      "group": "collectibles",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "stunt-jumps",
+      "name": "Stunt Jumps",
+      "group": "activities",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "knife-flights",
+      "name": "Knife Flights",
+      "group": "activities",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "under-the-bridges",
+      "name": "Under the Bridges",
+      "group": "activities",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "armored-truck",
+      "name": "Armored Truck",
+      "group": "money-activities",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "gang-convoy",
+      "name": "Finders Keepers",
+      "group": "money-activities",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "store-robberies",
+      "name": "Store Robberies",
+      "group": "money-activities",
+      "money": true,
+      "daily": false
+    },
+    {
+      "slug": "metal-detectors",
+      "name": "Metal Detectors",
+      "group": "money-activities",
+      "money": true,
+      "daily": false
+    },
+    {
+      "slug": "exotic-exports",
+      "name": "Exotic Exports",
+      "group": "money-activities",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "drug-vehicle",
+      "name": "Drug Vehicle",
+      "group": "money-activities",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "drunk-guard",
+      "name": "Drunk Guard",
+      "group": "other",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "smuggler-cache",
+      "name": "Smuggler Cache",
+      "group": "money-activities",
+      "money": true,
+      "daily": false
+    },
+    {
+      "slug": "smuggler-plane",
+      "name": "Smuggler Plane",
+      "group": "money-activities",
+      "money": true,
+      "daily": false
+    },
+    {
+      "slug": "gang-attacks",
+      "name": "Gang Attacks",
+      "group": "other",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "ufo-sightseeing",
+      "name": "UFO Sightseeing",
+      "group": "public-places",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "spray-cans",
+      "name": "Spray Cans",
+      "group": "collectibles",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "service-carbine",
+      "name": "Crime Scenes",
+      "group": "collectibles",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "navy-revolver",
+      "name": "Los Santos Slasher",
+      "group": "collectibles",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "stone-hatchet",
+      "name": "Bounty Targets",
+      "group": "collectibles",
+      "money": true,
+      "daily": true
+    },
+    {
+      "slug": "double-action-revolver",
+      "name": "Treasure Hunt",
+      "group": "collectibles",
+      "money": true,
+      "daily": false
+    },
+    {
+      "slug": "acid-lab-spawns",
+      "name": "Acid Lab Spawn Locations",
+      "group": "vehicle-spawns",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "terrorbyte-spawns",
+      "name": "Terrorbyte Spawn Locations",
+      "group": "vehicle-spawns",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "avenger-spawns",
+      "name": "Avenger Spawn Locations",
+      "group": "vehicle-spawns",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "moc-spawns",
+      "name": "MOC Spawn Locations",
+      "group": "vehicle-spawns",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "personal-aircraft-spawns",
+      "name": "Personal Aircraft Spawn Locations",
+      "group": "vehicle-spawns",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "pegasus-land-vehicles",
+      "name": "Pegasus Delivery Locations (Land Vehicles)",
+      "group": "vehicle-spawns",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "pegasus-aircrafts",
+      "name": "Pegasus Delivery Locations (Aircrafts)",
+      "group": "vehicle-spawns",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "pegasus-helicopters",
+      "name": "Pegasus Delivery Locations (Helicopters)",
+      "group": "vehicle-spawns",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "pegasus-boats",
+      "name": "Pegasus Delivery Locations (Boats)",
+      "group": "vehicle-spawns",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "kosatka-spawns",
+      "name": "Kosatka",
+      "group": "vehicle-spawns",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "imani-source-motorcycle",
+      "name": "Imani Source Motorcycle Spawns",
+      "group": "vehicle-spawns",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "cayo-perico-heist",
+      "name": "Cayo Perico Heist",
+      "group": "cayo-heist",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "cayo-infiltration-points",
+      "name": "Cayo Infiltration Points",
+      "group": "cayo-heist",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "cayo-exfiltration-points",
+      "name": "Cayo Exfiltration (Escape) Points",
+      "group": "cayo-heist",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "cayo-secondary-targets",
+      "name": "Cayo Secondary Targets",
+      "group": "cayo-heist",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "cayo-supply-trucks",
+      "name": "Cayo Supply Trucks",
+      "group": "cayo-heist",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "cayo-bolt-cutters",
+      "name": "Cayo Bolt Cutters",
+      "group": "cayo-heist",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "cayo-grappling-equipment",
+      "name": "Cayo Grappling Equipment",
+      "group": "cayo-heist",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "cayo-guard-clothing",
+      "name": "Cayo Guard Clothing",
+      "group": "cayo-heist",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "cayo-compound-entry-points",
+      "name": "Cayo Compound Entry Points",
+      "group": "cayo-heist",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "payphone-hits",
+      "name": "Payphone Hits",
+      "group": "money-activities",
+      "money": true,
+      "daily": false
+    },
+    {
+      "slug": "businesses-missions",
+      "name": "Businesses Missions",
+      "group": "business-missions",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "acid-lab-delivery-locations",
+      "name": "Acid Lab Delivery Locations",
+      "group": "business-missions",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "acid-lab-source-missions",
+      "name": "Acid Lab Source Missions",
+      "group": "business-missions",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "auto-shop-delivery-locations",
+      "name": "Auto Shop Service",
+      "group": "business-missions",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "nightclub-sell-missions",
+      "name": "Nightclub Goods Sell Missions",
+      "group": "business-missions",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "nightclub-source-missions",
+      "name": "Nightclub Goods Source Missions",
+      "group": "business-missions",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "air-freight-cargo-sell-missions",
+      "name": "Air Freight Cargo Sell Missions",
+      "group": "business-missions",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "air-freight-cargo-source-missions",
+      "name": "Air Freight Cargo Source Missions",
+      "group": "business-missions",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "bunker-sell-missions",
+      "name": "Bunker Stock Sell Missions",
+      "group": "business-missions",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "bunker-resupply-missions",
+      "name": "Bunker Resupply (Steal) Missions",
+      "group": "business-missions",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "ie-delivery",
+      "name": "Vehicle Cargo Sell Missions",
+      "group": "business-missions",
+      "money": true,
+      "daily": false
+    },
+    {
+      "slug": "ie-steal",
+      "name": "Vehicle Cargo Steal Missions",
+      "group": "business-missions",
+      "money": true,
+      "daily": false
+    },
+    {
+      "slug": "biker-businesses-sell-missions",
+      "name": "Biker Businesses Sell Missions",
+      "group": "business-missions",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "biker-businesses-resupply-missions",
+      "name": "Biker Businesses Resupply (Steal) Missions",
+      "group": "business-missions",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "special-cargo-sell-missions",
+      "name": "Special Cargo Sell Missions",
+      "group": "business-missions",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "special-cargo-source-missions",
+      "name": "Special Cargo Source Missions",
+      "group": "business-missions",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "cluckin-bell-farm-raid",
+      "name": "Cluckin' Bell Farm Raid (Laptop & Terrorbyte)",
+      "group": "money-activities",
+      "money": true,
+      "daily": false
+    },
+    {
+      "slug": "ceo-vip-work",
+      "name": "CEO/VIP Work",
+      "group": "money-activities",
+      "money": true,
+      "daily": false
+    },
+    {
+      "slug": "head-hunter",
+      "name": "Headhunter Targets",
+      "group": "money-activities",
+      "money": true,
+      "daily": false
+    },
+    {
+      "slug": "sight-seer",
+      "name": "Sightseer",
+      "group": "money-activities",
+      "money": true,
+      "daily": false
+    },
+    {
+      "slug": "time-trials",
+      "name": "Time Trials",
+      "group": "activities",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "time-trials-rc",
+      "name": "RC Bandito Time Trials",
+      "group": "activities",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "time-trials-hsw",
+      "name": "HSW Time Trials",
+      "group": "activities",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "diamond-casino",
+      "name": "The Diamond Casino & Resort",
+      "group": "activities",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "ls-car-meet",
+      "name": "LS Car Meet",
+      "group": "activities",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "luxury-autos",
+      "name": "Luxury Autos",
+      "group": "activities",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "premium-deluxe-motorsport",
+      "name": "Premium Deluxe Motorsport",
+      "group": "activities",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "online-properties",
+      "name": "Properties (all online)",
+      "group": "properties",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "bail-offices",
+      "name": "Bail Offices",
+      "group": "properties",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "salvage-yards",
+      "name": "Salvage Yards",
+      "group": "properties",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "the-freakshop",
+      "name": "The Freakshop (Acid Lab)",
+      "group": "properties",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "property-agencies",
+      "name": "Agencies",
+      "group": "properties",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "auto-shops",
+      "name": "Auto Shops",
+      "group": "properties",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "property-arcades",
+      "name": "Arcades",
+      "group": "properties",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "property-nightclubs",
+      "name": "Nightclubs",
+      "group": "properties",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "property-hangars",
+      "name": "Hangars",
+      "group": "properties",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "property-bunkers",
+      "name": "Bunkers",
+      "group": "properties",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "biker-businesses",
+      "name": "Biker Businesses",
+      "group": "properties",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "property-clubhouses",
+      "name": "Clubhouses",
+      "group": "properties",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "cargo-warehouses",
+      "name": "Special Cargo Warehouses",
+      "group": "properties",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "vehicle-warehouses",
+      "name": "Vehicle Warehouses",
+      "group": "properties",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "executive-offices",
+      "name": "Executive Offices",
+      "group": "properties",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "peyote-plants",
+      "name": "Peyote Plants",
+      "group": "daily-collectibles",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "snow-men",
+      "name": "Snowmen",
+      "group": "daily-collectibles",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "ammu-nations",
+      "name": "Ammu-Nations",
+      "group": "public-places",
+      "money": false,
+      "daily": false
+    },
+    {
+      "slug": "mod-shops",
+      "name": "Mod Shops",
+      "group": "properties",
+      "money": false,
+      "daily": false
+    }
+  ]
+}

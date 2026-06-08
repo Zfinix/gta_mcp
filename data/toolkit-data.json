@@ -1,0 +1,3138 @@
+{
+ "time": 1780873396,
+ "static": {
+  "weeklies": {
+   "week": 2944,
+   "next": 1781157600,
+   "targets": {
+    "default": 1,
+    "0": 5,
+    "1": 5,
+    "2": 10,
+    "3": 3,
+    "4": 1,
+    "5": 1,
+    "6": 1,
+    "7": 1,
+    "8": 2,
+    "9": 1,
+    "10": 2,
+    "11": 1,
+    "12": 5,
+    "13": 1,
+    "14": 1,
+    "15": 1,
+    "16": 1,
+    "17": 10,
+    "18": 3,
+    "19": 5,
+    "20": 1,
+    "21": 5,
+    "22": 5,
+    "23": 5,
+    "24": 5,
+    "25": 10,
+    "26": 5,
+    "27": 5,
+    "28": 3,
+    "29": 1,
+    "30": 5,
+    "32": 5,
+    "33": 5,
+    "34": 3,
+    "35": 3,
+    "36": 3,
+    "37": 3,
+    "39": 5,
+    "41": 25,
+    "42": 10,
+    "43": 3,
+    "44": 3,
+    "45": 3,
+    "46": 3,
+    "47": 3,
+    "48": 3,
+    "49": 3,
+    "50": 3,
+    "51": 3,
+    "52": 10,
+    "53": 5,
+    "54": 3,
+    "55": 3,
+    "56": 3,
+    "57": 3,
+    "58": 3,
+    "59": 5,
+    "60": 5,
+    "61": 3000000,
+    "62": 100000,
+    "63": 3,
+    "64": 3,
+    "65": 3,
+    "66": 3,
+    "67": 3,
+    "68": 3,
+    "69": 1,
+    "70": 10,
+    "71": 3,
+    "72": 3,
+    "73": 3,
+    "74": 1,
+    "75": 10,
+    "76": 10,
+    "77": 1,
+    "78": 2,
+    "79": 5,
+    "80": 5,
+    "81": 10,
+    "83": 5,
+    "84": 3,
+    "85": 3,
+    "86": 2000000,
+    "87": 2000000,
+    "88": 50000,
+    "89": 2000000,
+    "82": 50000,
+    "40": 6,
+    "31": 6,
+    "38": 3,
+    "114": 3,
+    "115": 1,
+    "116": 1,
+    "117": 1,
+    "92": 3,
+    "93": 10,
+    "94": 2,
+    "95": 2,
+    "96": 10,
+    "97": 3,
+    "98": 2,
+    "99": 3,
+    "100": 1,
+    "101": 5,
+    "118": 2,
+    "102": 5,
+    "103": 5,
+    "104": 5,
+    "105": 5,
+    "106": 2,
+    "107": 2,
+    "108": 2,
+    "109": 2,
+    "110": 1,
+    "111": 2,
+    "112": 5
+   }
+  },
+  "dailies": {
+   "day": 20611,
+   "next": 1780898400
+  },
+  "casino": {
+   "wheel": 86400
+  },
+  "safes": {
+   "bo": {
+    "cell_capacity": 4
+   }
+  },
+  "mc": {
+   "acid": {
+    "id": 6,
+    "order": 0,
+    "boost": {
+     "day": 20611,
+     "next": 1780898400
+    },
+    "named_product_bonus": 5
+   },
+   "bunk": {
+    "id": 5,
+    "order": 1
+   },
+   "coke": {
+    "id": 4,
+    "order": 2
+   },
+   "meth": {
+    "id": 3,
+    "order": 3
+   },
+   "cash": {
+    "id": 2,
+    "order": 4
+   },
+   "weed": {
+    "id": 1,
+    "order": 5
+   },
+   "docs": {
+    "id": 0,
+    "order": 6
+   }
+  },
+  "nc": {
+   "cargo": {
+    "id": 0,
+    "order": 0
+   },
+   "sport": {
+    "id": 1,
+    "order": 1,
+    "mc": "bunk"
+   },
+   "south": {
+    "id": 2,
+    "order": 2,
+    "mc": "coke"
+   },
+   "pharm": {
+    "id": 3,
+    "order": 3,
+    "mc": "meth"
+   },
+   "caash": {
+    "id": 6,
+    "order": 4,
+    "mc": "cash"
+   },
+   "organ": {
+    "id": 4,
+    "order": 5,
+    "mc": "weed"
+   },
+   "print": {
+    "id": 5,
+    "order": 6,
+    "mc": "docs"
+   }
+  },
+  "ss": {
+   "warehouses": 5,
+   "capacity": {
+    "small": 16,
+    "medium": 42,
+    "large": 111
+   },
+   "sizes": {
+    "small": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     8
+    ],
+    "medium": [
+     6,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     20
+    ],
+    "large": [
+     5,
+     7,
+     15,
+     16,
+     17,
+     18,
+     19,
+     21
+    ]
+   }
+  },
+  "sh": {
+   "narcos": {
+    "id": 5,
+    "order": 0
+   },
+   "chemic": {
+    "id": 2,
+    "order": 1
+   },
+   "medsup": {
+    "id": 4,
+    "order": 2
+   },
+   "animal": {
+    "id": 0,
+    "order": 3
+   },
+   "artant": {
+    "id": 1,
+    "order": 4
+   },
+   "jewgem": {
+    "id": 6,
+    "order": 5
+   },
+   "tobalc": {
+    "id": 6,
+    "order": 6
+   },
+   "cgoods": {
+    "id": 3,
+    "order": 7
+   }
+  },
+  "sh_capacity": 50,
+  "ie": {
+   "capacity": 40,
+   "vehicles": {
+    "1": {
+     "id": 1,
+     "model": "PROTOTIPO",
+     "plate": "FUTUR3",
+     "range": 3
+    },
+    "2": {
+     "id": 2,
+     "model": "PROTOTIPO",
+     "plate": "M4K3B4NK",
+     "range": 3,
+     "collection": 2007
+    },
+    "3": {
+     "id": 3,
+     "model": "PROTOTIPO",
+     "plate": "TURB0",
+     "range": 3
+    },
+    "4": {
+     "id": 4,
+     "model": "TYRUS",
+     "plate": "C1TRUS",
+     "range": 3,
+     "collection": 2002
+    },
+    "5": {
+     "id": 5,
+     "model": "TYRUS",
+     "plate": "B35TL4P",
+     "range": 3
+    },
+    "6": {
+     "id": 6,
+     "model": "TYRUS",
+     "plate": "TR3X",
+     "range": 3
+    },
+    "7": {
+     "id": 7,
+     "model": "BESTIAGTS",
+     "plate": "BE4STY",
+     "range": 1,
+     "collection": 2008
+    },
+    "8": {
+     "id": 8,
+     "model": "BESTIAGTS",
+     "plate": "5T34LTH",
+     "range": 1
+    },
+    "9": {
+     "id": 9,
+     "model": "BESTIAGTS",
+     "plate": "5M00TH",
+     "range": 1
+    },
+    "10": {
+     "id": 10,
+     "model": "T20",
+     "plate": "CAR4M3L",
+     "range": 3
+    },
+    "11": {
+     "id": 11,
+     "model": "T20",
+     "plate": "T0PSP33D",
+     "range": 3
+    },
+    "12": {
+     "id": 12,
+     "model": "T20",
+     "plate": "D3V1L",
+     "range": 3,
+     "collection": 2007
+    },
+    "13": {
+     "id": 13,
+     "model": "SHEAVA",
+     "plate": "B1GB0Y",
+     "range": 3
+    },
+    "14": {
+     "id": 14,
+     "model": "SHEAVA",
+     "plate": "M0N4RCH",
+     "range": 3
+    },
+    "15": {
+     "id": 15,
+     "model": "SHEAVA",
+     "plate": "PR3TTY",
+     "range": 3,
+     "collection": 2005
+    },
+    "16": {
+     "id": 16,
+     "model": "OSIRIS",
+     "plate": "OH3LL0",
+     "range": 3
+    },
+    "17": {
+     "id": 17,
+     "model": "OSIRIS",
+     "plate": "PH4R40H",
+     "range": 3
+    },
+    "18": {
+     "id": 18,
+     "model": "OSIRIS",
+     "plate": "SL33K",
+     "range": 3,
+     "collection": 2007
+    },
+    "19": {
+     "id": 19,
+     "model": "FMJ",
+     "plate": "C4TCHM3",
+     "range": 3,
+     "collection": 2002
+    },
+    "20": {
+     "id": 20,
+     "model": "FMJ",
+     "plate": "J0K3R",
+     "range": 3
+    },
+    "21": {
+     "id": 21,
+     "model": "FMJ",
+     "plate": "H0T4U",
+     "range": 3
+    },
+    "22": {
+     "id": 22,
+     "model": "REAPER",
+     "plate": "2FA5T4U",
+     "range": 3
+    },
+    "23": {
+     "id": 23,
+     "model": "REAPER",
+     "plate": "D34TH4U",
+     "range": 3,
+     "collection": 2001
+    },
+    "24": {
+     "id": 24,
+     "model": "REAPER",
+     "plate": "GR1M",
+     "range": 3
+    },
+    "25": {
+     "id": 25,
+     "model": "PFISTER811",
+     "plate": "M1DL1F3",
+     "range": 3
+    },
+    "26": {
+     "id": 26,
+     "model": "PFISTER811",
+     "plate": "R3G4L",
+     "range": 3
+    },
+    "27": {
+     "id": 27,
+     "model": "PFISTER811",
+     "plate": "SL1CK",
+     "range": 3,
+     "collection": 2008
+    },
+    "28": {
+     "id": 28,
+     "model": "ALPHA",
+     "plate": "V1S1ONRY",
+     "range": 1,
+     "collection": 2001
+    },
+    "29": {
+     "id": 29,
+     "model": "ALPHA",
+     "plate": "L0NG80Y",
+     "range": 1
+    },
+    "30": {
+     "id": 30,
+     "model": "ALPHA",
+     "plate": "R31GN",
+     "range": 1
+    },
+    "31": {
+     "id": 31,
+     "model": "MAMBA",
+     "plate": "0LDBLU3",
+     "range": 3
+    },
+    "32": {
+     "id": 32,
+     "model": "MAMBA",
+     "plate": "BLKM4MB4",
+     "range": 3,
+     "collection": 2006
+    },
+    "33": {
+     "id": 33,
+     "model": "MAMBA",
+     "plate": "V1P",
+     "range": 3
+    },
+    "34": {
+     "id": 34,
+     "model": "TAMPA",
+     "plate": "CH4RG3D",
+     "range": 1,
+     "collection": 2006
+    },
+    "35": {
+     "id": 35,
+     "model": "TAMPA",
+     "plate": "CRU151N",
+     "range": 1
+    },
+    "36": {
+     "id": 36,
+     "model": "TAMPA",
+     "plate": "MU5CL3",
+     "range": 1
+    },
+    "37": {
+     "id": 37,
+     "model": "BTYPE3",
+     "plate": "L4WLESS",
+     "range": 3
+    },
+    "38": {
+     "id": 38,
+     "model": "BTYPE3",
+     "plate": "0LDT1M3R",
+     "range": 3,
+     "collection": 2010
+    },
+    "39": {
+     "id": 39,
+     "model": "BTYPE3",
+     "plate": "V4L0R",
+     "range": 3
+    },
+    "40": {
+     "id": 40,
+     "model": "FELTZER3",
+     "plate": "M4J3ST1C",
+     "range": 3
+    },
+    "41": {
+     "id": 41,
+     "model": "FELTZER3",
+     "plate": "T0UR3R",
+     "range": 3
+    },
+    "42": {
+     "id": 42,
+     "model": "FELTZER3",
+     "plate": "R4LLY",
+     "range": 3,
+     "collection": 2003
+    },
+    "43": {
+     "id": 43,
+     "model": "ZTYPE",
+     "plate": "B1GMON3Y",
+     "range": 3,
+     "collection": 2010
+    },
+    "44": {
+     "id": 44,
+     "model": "ZTYPE",
+     "plate": "K1NGP1N",
+     "range": 3
+    },
+    "45": {
+     "id": 45,
+     "model": "ZTYPE",
+     "plate": "CE0",
+     "range": 3
+    },
+    "46": {
+     "id": 46,
+     "model": "TROPOS",
+     "plate": "1MS0RAD",
+     "range": 2
+    },
+    "47": {
+     "id": 47,
+     "model": "TROPOS",
+     "plate": "31GHT135",
+     "range": 2
+    },
+    "48": {
+     "id": 48,
+     "model": "TROPOS",
+     "plate": "1985",
+     "range": 2,
+     "collection": 2004
+    },
+    "49": {
+     "id": 49,
+     "model": "ENTITYXF",
+     "plate": "IML4TE",
+     "range": 2
+    },
+    "50": {
+     "id": 50,
+     "model": "ENTITYXF",
+     "plate": "0V3RFL0D",
+     "range": 2,
+     "collection": 2002
+    },
+    "51": {
+     "id": 51,
+     "model": "ENTITYXF",
+     "plate": "W1DEB0Y",
+     "range": 2
+    },
+    "52": {
+     "id": 52,
+     "model": "SULTANRS",
+     "plate": "SN0WFLK3",
+     "range": 2,
+     "collection": 2004
+    },
+    "53": {
+     "id": 53,
+     "model": "SULTANRS",
+     "plate": "F1D3L1TY",
+     "range": 2
+    },
+    "54": {
+     "id": 54,
+     "model": "SULTANRS",
+     "plate": "5H0W0FF",
+     "range": 2
+    },
+    "55": {
+     "id": 55,
+     "model": "ZENTORNO",
+     "plate": "W1NN1NG",
+     "range": 2,
+     "collection": 2001
+    },
+    "56": {
+     "id": 56,
+     "model": "ZENTORNO",
+     "plate": "0LDN3W5",
+     "range": 2
+    },
+    "57": {
+     "id": 57,
+     "model": "ZENTORNO",
+     "plate": "H3R0",
+     "range": 2
+    },
+    "58": {
+     "id": 58,
+     "model": "OMNIS",
+     "plate": "0BEYM3",
+     "range": 2
+    },
+    "59": {
+     "id": 59,
+     "model": "OMNIS",
+     "plate": "W1D3B0D",
+     "range": 2,
+     "collection": 2004
+    },
+    "60": {
+     "id": 60,
+     "model": "OMNIS",
+     "plate": "D1RTY",
+     "range": 2
+    },
+    "61": {
+     "id": 61,
+     "model": "COQUETTE3",
+     "plate": "V1NT4G3",
+     "range": 2,
+     "collection": 2009
+    },
+    "62": {
+     "id": 62,
+     "model": "COQUETTE3",
+     "plate": "W1P30UT",
+     "range": 2
+    },
+    "63": {
+     "id": 63,
+     "model": "COQUETTE3",
+     "plate": "BLKF1N",
+     "range": 2
+    },
+    "64": {
+     "id": 64,
+     "model": "SEVEN70",
+     "plate": "FRU1TY",
+     "range": 2
+    },
+    "65": {
+     "id": 65,
+     "model": "SEVEN70",
+     "plate": "4LL0Y5",
+     "range": 2,
+     "collection": 2003
+    },
+    "66": {
+     "id": 66,
+     "model": "SEVEN70",
+     "plate": "SP33DY",
+     "range": 2
+    },
+    "67": {
+     "id": 67,
+     "model": "VERLIERER2",
+     "plate": "PR3C1OUS",
+     "range": 2,
+     "collection": 2005
+    },
+    "68": {
+     "id": 68,
+     "model": "VERLIERER2",
+     "plate": "0UTFR0NT",
+     "range": 2
+    },
+    "69": {
+     "id": 69,
+     "model": "VERLIERER2",
+     "plate": "CURV35",
+     "range": 2
+    },
+    "70": {
+     "id": 70,
+     "model": "FELTZER2",
+     "plate": "P0W3RFUL",
+     "range": 1,
+     "collection": 2008
+    },
+    "71": {
+     "id": 71,
+     "model": "FELTZER2",
+     "plate": "K3YL1M3",
+     "range": 1
+    },
+    "72": {
+     "id": 72,
+     "model": "FELTZER2",
+     "plate": "R4C3R",
+     "range": 1
+    },
+    "73": {
+     "id": 73,
+     "model": "COQUETTE2",
+     "plate": "T0PL3SS",
+     "range": 2,
+     "collection": 2005
+    },
+    "74": {
+     "id": 74,
+     "model": "COQUETTE2",
+     "plate": "T0FF33",
+     "range": 2
+    },
+    "75": {
+     "id": 75,
+     "model": "COQUETTE2",
+     "plate": "CL45SY",
+     "range": 2
+    },
+    "76": {
+     "id": 76,
+     "model": "CHEETAH",
+     "plate": "BUZZ3D",
+     "range": 2,
+     "collection": 2002
+    },
+    "77": {
+     "id": 77,
+     "model": "CHEETAH",
+     "plate": "M1DN1GHT",
+     "range": 2
+    },
+    "78": {
+     "id": 78,
+     "model": "CHEETAH",
+     "plate": "B1GC4T",
+     "range": 2
+    },
+    "79": {
+     "id": 79,
+     "model": "NIGHTSHADE",
+     "plate": "DE4DLY",
+     "range": 1
+    },
+    "80": {
+     "id": 80,
+     "model": "NIGHTSHADE",
+     "plate": "TH37OS",
+     "range": 1,
+     "collection": 2009
+    },
+    "81": {
+     "id": 81,
+     "model": "NIGHTSHADE",
+     "plate": "E4TM3",
+     "range": 1
+    },
+    "82": {
+     "id": 82,
+     "model": "BANSHEE2",
+     "plate": "DR1FT3R",
+     "range": 1,
+     "collection": 2003
+    },
+    "83": {
+     "id": 83,
+     "model": "BANSHEE2",
+     "plate": "D0M1N0",
+     "range": 1
+    },
+    "84": {
+     "id": 84,
+     "model": "BANSHEE2",
+     "plate": "H0WL3R",
+     "range": 1
+    },
+    "85": {
+     "id": 85,
+     "model": "TURISMOR",
+     "plate": "IN4H4ZE",
+     "range": 1
+    },
+    "86": {
+     "id": 86,
+     "model": "TURISMOR",
+     "plate": "M1LKYW4Y",
+     "range": 1
+    },
+    "87": {
+     "id": 87,
+     "model": "TURISMOR",
+     "plate": "TPD4WG",
+     "range": 1,
+     "collection": 2003
+    },
+    "88": {
+     "id": 88,
+     "model": "MASSACRO",
+     "plate": "TR0P1CAL",
+     "range": 1
+    },
+    "89": {
+     "id": 89,
+     "model": "MASSACRO",
+     "plate": "B4N4N4",
+     "range": 1
+    },
+    "90": {
+     "id": 90,
+     "model": "MASSACRO",
+     "plate": "B055",
+     "range": 1,
+     "collection": 2001
+    },
+    "91": {
+     "id": 91,
+     "model": "SABREGT2",
+     "plate": "GUNZ0UT",
+     "range": 1
+    },
+    "92": {
+     "id": 92,
+     "model": "SABREGT2",
+     "plate": "0R1G1N4L",
+     "range": 1
+    },
+    "93": {
+     "id": 93,
+     "model": "SABREGT2",
+     "plate": "B0UNC3",
+     "range": 1,
+     "collection": 2006
+    },
+    "94": {
+     "id": 94,
+     "model": "JESTER",
+     "plate": "H0TP1NK",
+     "range": 1
+    },
+    "95": {
+     "id": 95,
+     "model": "JESTER",
+     "plate": "T0PCL0WN",
+     "range": 1
+    },
+    "96": {
+     "id": 96,
+     "model": "JESTER",
+     "plate": "NOF00L",
+     "range": 1,
+     "collection": 2004
+    }
+   },
+   "collections": {
+    "2001": {
+     "id": 2001,
+     "name": "metal",
+     "vehicles": [
+      23,
+      28,
+      55,
+      90
+     ]
+    },
+    "2002": {
+     "id": 2002,
+     "name": "tropical",
+     "vehicles": [
+      4,
+      19,
+      50,
+      76
+     ]
+    },
+    "2003": {
+     "id": 2003,
+     "name": "elegant",
+     "vehicles": [
+      42,
+      65,
+      82,
+      87
+     ]
+    },
+    "2004": {
+     "id": 2004,
+     "name": "rally",
+     "vehicles": [
+      48,
+      52,
+      59,
+      96
+     ]
+    },
+    "2005": {
+     "id": 2005,
+     "name": "pretty",
+     "vehicles": [
+      15,
+      67,
+      73
+     ]
+    },
+    "2006": {
+     "id": 2006,
+     "name": "declasse",
+     "vehicles": [
+      32,
+      34,
+      93
+     ]
+    },
+    "2007": {
+     "id": 2007,
+     "name": "dangerous",
+     "vehicles": [
+      2,
+      12,
+      18
+     ]
+    },
+    "2008": {
+     "id": 2008,
+     "name": "matte",
+     "vehicles": [
+      7,
+      27,
+      70
+     ]
+    },
+    "2009": {
+     "id": 2009,
+     "name": "muscular",
+     "vehicles": [
+      61,
+      80
+     ]
+    },
+    "2010": {
+     "id": 2010,
+     "name": "wealthy",
+     "vehicles": [
+      38,
+      43
+     ]
+    }
+   }
+  },
+  "resets": [
+   1780876800,
+   1780880400,
+   1780884000,
+   1780887600,
+   1780891200,
+   1780894800,
+   1780898400,
+   1780902000,
+   1780905600,
+   1780909200,
+   1780912800,
+   1780916400,
+   1780920000,
+   1780923600,
+   1780927200,
+   1780930800,
+   1780934400,
+   1780938000,
+   1780941600,
+   1780945200,
+   1780948800,
+   1780952400,
+   1780956000,
+   1780959600
+  ]
+ },
+ "default": {
+  "weeklies": {
+   "obj": "-1",
+   "target": "-1",
+   "reward": {
+    "cash": "100000",
+    "rp": "10000"
+   }
+  },
+  "dailies": {
+   "obj": [
+    [
+     "-1",
+     "-1",
+     "-1"
+    ],
+    [
+     "-1",
+     "-1",
+     "-1"
+    ],
+    [
+     "-1",
+     "-1",
+     "-1"
+    ],
+    [
+     "-1",
+     "-1",
+     "-1"
+    ],
+    [
+     "-1",
+     "-1",
+     "-1"
+    ],
+    [
+     "-1",
+     "-1",
+     "-1"
+    ],
+    [
+     "-1",
+     "-1",
+     "-1"
+    ]
+   ],
+   "rewards": {
+    "1": {
+     "cash": "30000",
+     "rp": "5000"
+    },
+    "7": {
+     "cash": "150000",
+     "rp": "20000"
+    },
+    "28": {
+     "cash": "750000",
+     "rp": "50000"
+    }
+   }
+  },
+  "casino": {
+   "exchange": "2880",
+   "free": "86400",
+   "spins_more": "0",
+   "spins_count": "1",
+   "spins_more_2": "1",
+   "spins_count_2": "2"
+  },
+  "casino_chips": {
+   "buy_regular": "20000",
+   "buy_penthouse": "50000",
+   "free": "1000"
+  },
+  "safes": {
+   "mc": {
+    "supplies": "4",
+    "capacity": "100000",
+    "income": "5000"
+   },
+   "nc": {
+    "capacity": "250000",
+    "popdiv": "-0.1",
+    "popdiv_staff": "-0.05",
+    "income": {
+     "100": "50000",
+     "95": "50000",
+     "90": "45000",
+     "85": "25000",
+     "80": "24000",
+     "75": "23000",
+     "70": "22000",
+     "65": "21000",
+     "60": "20000",
+     "55": "10000",
+     "50": "9500",
+     "45": "9000",
+     "40": "8500",
+     "35": "8000",
+     "30": "2500",
+     "25": "2200",
+     "20": "2000",
+     "15": "1800",
+     "10": "1600",
+     "5": "1500"
+    }
+   },
+   "arcade": {
+    "capacity": "100000",
+    "income": "5000"
+   },
+   "agency": {
+    "capacity": "250000",
+    "max_income": "20000"
+   },
+   "salvage": {
+    "capacity": [
+     "100000",
+     "250000"
+    ],
+    "popincrease": "25",
+    "popdecrease": "5",
+    "time": "2880000",
+    "timepopdecrease": "2880000",
+    "income": {
+     "100": "20000",
+     "90": "18000",
+     "80": "16000",
+     "70": "14000",
+     "60": "12000",
+     "50": "10000",
+     "40": "8000",
+     "30": "6000",
+     "20": "4000",
+     "10": "2000",
+     "0": "250"
+    },
+    "multiplier": "1.2",
+    "salvage_time": {
+     "robbery": [
+      "192",
+      "144"
+     ],
+     "towtruck": [
+      "96",
+      "48"
+     ]
+    }
+   },
+   "bo": {
+    "time": "48",
+    "time_targets": "3600",
+    "time_processing": [
+     "24",
+     "12",
+     "6"
+    ],
+    "income": {
+     "min": "5000",
+     "max": "10000"
+    },
+    "capacity": "100000"
+   },
+   "gf": {
+    "time": "2880000",
+    "income": {
+     "min": "1500",
+     "max": "2000"
+    },
+    "capacity": "100000"
+   },
+   "bunk": {
+    "time": "2880000",
+    "income": "50000",
+    "capacity": "50000"
+   },
+   "ss": {
+    "time": "2880",
+    "income": "50000",
+    "capacity": "50000"
+   },
+   "cw": {
+    "time": "2880000",
+    "capacity": "100000",
+    "income": {
+     "mc": {
+      "acid": "1250",
+      "bunk": "1500",
+      "coke": "1500",
+      "meth": "1250",
+      "cash": "1250",
+      "weed": "1000",
+      "docs": "1000"
+     },
+     "nc": "1500",
+     "arcade": "1500",
+     "as": "1500",
+     "agency": "1750",
+     "salvage": "1500",
+     "bo": "1500",
+     "gf": "1750",
+     "mh": "1500",
+     "ss": {
+      "small": "750",
+      "medium": "1250",
+      "large": "1500"
+     },
+     "sh": "1500",
+     "ie": "1500",
+     "cw": {
+      "init": "750",
+      "bost": "1500",
+      "cond": "15"
+     },
+     "ws": {
+      "init": "750",
+      "bost": "1500",
+      "cond": "15"
+     },
+     "hh": {
+      "init": "750",
+      "bost": "1500",
+      "cond": "15"
+     }
+    },
+    "heat": {
+     "faber": {
+      "1": "10",
+      "2": "10"
+     },
+     "laundry": {
+      "1": "5",
+      "2": "5"
+     },
+     "intime": {
+      "base": "10",
+      "reduct": "1"
+     }
+    },
+    "duffel": {
+     "capacity": "1000000",
+     "intime": {
+      "base": "10",
+      "reduct": "1"
+     },
+     "income": {
+      "cw": "35000",
+      "ws": "35000",
+      "hh": "35000"
+     }
+    }
+   }
+  },
+  "mc": {
+   "acid": {
+    "time": "135000",
+    "value": "1485",
+    "supdiv": "2",
+    "supdel": "600",
+    "capacity": "160",
+    "boost": "80",
+    "upgrades": {
+     "equip": {
+      "time": "45000",
+      "value": "610",
+      "supdiv": "1",
+      "mis": "10"
+     }
+    },
+    "mansion": "3"
+   },
+   "bunk": {
+    "time": "600000",
+    "value": "5000",
+    "supdiv": "10",
+    "supdel": "600",
+    "capacity": "100",
+    "r_time": "300000",
+    "r_supdiv": "2",
+    "r_capacity": "60",
+    "r_cost": "45000",
+    "upgrades": {
+     "equip": {
+      "time": "90000",
+      "value": "1000",
+      "supdiv": "5",
+      "r_time": "45000",
+      "r_supdiv": "1"
+     },
+     "staff": {
+      "time": "90000",
+      "value": "1000",
+      "r_time": "45000"
+     }
+    },
+    "sell_multipliers": {
+     "close": "1",
+     "far": "1.5"
+    },
+    "thresholds": {
+     "medium": "25",
+     "large": "50"
+    },
+    "mansion": "3"
+   },
+   "coke": {
+    "time": "3000000",
+    "value": "27000",
+    "supdiv": "50",
+    "supdel": "600",
+    "capacity": "10",
+    "upgrades": {
+     "equip": {
+      "time": "600000",
+      "value": "4000",
+      "supdiv": "25"
+     },
+     "staff": {
+      "time": "600000",
+      "value": "4000"
+     }
+    },
+    "sell_multipliers": {
+     "close": "1",
+     "far": "1.5"
+    },
+    "thresholds": {
+     "medium": "25",
+     "large": "50"
+    },
+    "mansion": "3"
+   },
+   "meth": {
+    "time": "1800000",
+    "value": "11475",
+    "supdiv": "24",
+    "supdel": "600",
+    "capacity": "20",
+    "upgrades": {
+     "equip": {
+      "time": "360000",
+      "value": "1700",
+      "supdiv": "12"
+     },
+     "staff": {
+      "time": "360000",
+      "value": "1700"
+     }
+    },
+    "sell_multipliers": {
+     "close": "1",
+     "far": "1.5"
+    },
+    "thresholds": {
+     "medium": "25",
+     "large": "50"
+    },
+    "mansion": "3"
+   },
+   "cash": {
+    "time": "720000",
+    "value": "4725",
+    "supdiv": "10",
+    "supdel": "600",
+    "capacity": "40",
+    "upgrades": {
+     "equip": {
+      "time": "120000",
+      "value": "700",
+      "supdiv": "5"
+     },
+     "staff": {
+      "time": "120000",
+      "value": "700"
+     }
+    },
+    "sell_multipliers": {
+     "close": "1",
+     "far": "1.5"
+    },
+    "thresholds": {
+     "medium": "25",
+     "large": "50"
+    },
+    "boost_value": "1.35",
+    "mansion": "3"
+   },
+   "weed": {
+    "time": "360000",
+    "value": "2025",
+    "supdiv": "4",
+    "supdel": "600",
+    "capacity": "80",
+    "upgrades": {
+     "equip": {
+      "time": "60000",
+      "value": "300",
+      "supdiv": "2"
+     },
+     "staff": {
+      "time": "60000",
+      "value": "300"
+     }
+    },
+    "sell_multipliers": {
+     "close": "1",
+     "far": "1.5"
+    },
+    "thresholds": {
+     "medium": "25",
+     "large": "50"
+    },
+    "boost_value": "1.35",
+    "mansion": "3"
+   },
+   "docs": {
+    "time": "300000",
+    "value": "1350",
+    "supdiv": "4",
+    "supdel": "600",
+    "capacity": "60",
+    "upgrades": {
+     "equip": {
+      "time": "60000",
+      "value": "200",
+      "supdiv": "2"
+     },
+     "staff": {
+      "time": "60000",
+      "value": "200"
+     }
+    },
+    "sell_multipliers": {
+     "close": "1",
+     "far": "1.5"
+    },
+    "thresholds": {
+     "medium": "25",
+     "large": "50"
+    },
+    "mansion": "3"
+   }
+  },
+  "mansion": {
+   "time": "86400"
+  },
+  "nc": {
+   "cargo": {
+    "time": "8400000",
+    "value": "10000",
+    "value_alt": "10000",
+    "capacity": "50"
+   },
+   "sport": {
+    "time": "4800000",
+    "value": "5000",
+    "value_alt": "5000",
+    "capacity": "100"
+   },
+   "south": {
+    "time": "14400000",
+    "value": "27000",
+    "value_alt": "27000",
+    "capacity": "10"
+   },
+   "pharm": {
+    "time": "7200000",
+    "value": "11475",
+    "value_alt": "11475",
+    "capacity": "20"
+   },
+   "caash": {
+    "time": "3600000",
+    "value": "4725",
+    "value_alt": "4725",
+    "capacity": "40"
+   },
+   "organ": {
+    "time": "2400000",
+    "value": "2025",
+    "value_alt": "2025",
+    "capacity": "80"
+   },
+   "print": {
+    "time": "1800000",
+    "value": "1350",
+    "value_alt": "1350",
+    "capacity": "60"
+   }
+  },
+  "nc_time_multiplier": "0.5",
+  "nc_delivery": {
+   "mule": "0.25",
+   "pounder": "0.5"
+  },
+  "ss": {
+   "value": {
+    "1": {
+     "tresh": "1",
+     "value": "10000"
+    },
+    "2": {
+     "tresh": "2",
+     "value": "11000"
+    },
+    "3": {
+     "tresh": "3",
+     "value": "12000"
+    },
+    "4": {
+     "tresh": "4",
+     "value": "13000"
+    },
+    "5": {
+     "tresh": "6",
+     "value": "13500"
+    },
+    "6": {
+     "tresh": "8",
+     "value": "14000"
+    },
+    "7": {
+     "tresh": "10",
+     "value": "14500"
+    },
+    "8": {
+     "tresh": "15",
+     "value": "15000"
+    },
+    "9": {
+     "tresh": "20",
+     "value": "15500"
+    },
+    "10": {
+     "tresh": "25",
+     "value": "16000"
+    },
+    "11": {
+     "tresh": "30",
+     "value": "16500"
+    },
+    "12": {
+     "tresh": "35",
+     "value": "17000"
+    },
+    "13": {
+     "tresh": "40",
+     "value": "17500"
+    },
+    "14": {
+     "tresh": "45",
+     "value": "17750"
+    },
+    "15": {
+     "tresh": "50",
+     "value": "18000"
+    },
+    "16": {
+     "tresh": "60",
+     "value": "18250"
+    },
+    "17": {
+     "tresh": "70",
+     "value": "18500"
+    },
+    "18": {
+     "tresh": "80",
+     "value": "18750"
+    },
+    "19": {
+     "tresh": "90",
+     "value": "19000"
+    },
+    "20": {
+     "tresh": "100",
+     "value": "19500"
+    },
+    "21": {
+     "tresh": "111",
+     "value": "20000"
+    }
+   },
+   "rare": [
+    "125000",
+    "115000",
+    "135000",
+    "105000",
+    "95000",
+    "150000"
+   ],
+   "lupe": "48",
+   "buyers": {
+    "1": "100",
+    "2": "50",
+    "3": "20"
+   }
+  },
+  "sh": {
+   "narcos": {
+    "value": "30000",
+    "tresh": "25",
+    "multiplier": "0.35"
+   },
+   "chemic": {
+    "value": "30000",
+    "tresh": "25",
+    "multiplier": "0.35"
+   },
+   "medsup": {
+    "value": "30000",
+    "tresh": "25",
+    "multiplier": "0.35"
+   },
+   "animal": {
+    "value": "30000",
+    "tresh": "10",
+    "multiplier": "0.12"
+   },
+   "artant": {
+    "value": "30000",
+    "tresh": "10",
+    "multiplier": "0.12"
+   },
+   "jewgem": {
+    "value": "30000",
+    "tresh": "10",
+    "multiplier": "0.12"
+   },
+   "tobalc": {
+    "value": "30000",
+    "tresh": "5",
+    "multiplier": "0.05"
+   },
+   "cgoods": {
+    "value": "30000",
+    "tresh": "5",
+    "multiplier": "0.05"
+   }
+  },
+  "sh_mixed": "30000",
+  "sh_rooster": "48",
+  "sh_boost_value": "1.1",
+  "ie": {
+   "time": {
+    "1": "1200000",
+    "2": "1680000",
+    "3": "2340000",
+    "4": "2880000"
+   },
+   "income": {
+    "1": "15000",
+    "2": "25000",
+    "3": "40000"
+   },
+   "multiplier": "2",
+   "cost": "0.5",
+   "multiplier_mid": "1.5",
+   "cost_mid": "0.25",
+   "cost_low": "0",
+   "collections": {
+    "wealthy": "20000",
+    "declasse": "35000",
+    "elegant": "50000",
+    "dangerous": "35000",
+    "rally": "50000",
+    "tropical": "50000",
+    "matte": "35000",
+    "pretty": "35000",
+    "muscular": "20000",
+    "metal": "50000"
+   }
+  },
+  "hdbc": {
+   "acid": {
+    "per": "2.5",
+    "cap": "20"
+   },
+   "bunk": {
+    "per": "2.5",
+    "cap": "20"
+   },
+   "mc": {
+    "per": "2.5",
+    "cap": "20"
+   },
+   "nc": {
+    "per": "2.5",
+    "cap": "20",
+    "cutPer": "0.1"
+   },
+   "wh": {
+    "per": "2.5",
+    "cap": "20"
+   },
+   "sh": {
+    "per": "2.5",
+    "cap": "20",
+    "cutPer": "0.025",
+    "cutCap": "30000"
+   },
+   "ie": {
+    "per": "2.5",
+    "cap": "20"
+   }
+  }
+ },
+ "current": {
+  "weeklies": {
+   "obj": "46",
+   "target": "2",
+   "reward": {
+    "cash": "100000",
+    "rp": "10000"
+   }
+  },
+  "dailies": {
+   "obj": [
+    [
+     "68",
+     "-1",
+     "-1"
+    ],
+    [
+     "214",
+     "-1",
+     "-1"
+    ],
+    [
+     "2",
+     "-1",
+     "-1"
+    ],
+    [
+     "38",
+     "-1",
+     "-1"
+    ],
+    [
+     "90",
+     "-1",
+     "-1"
+    ],
+    [
+     "99",
+     "-1",
+     "-1"
+    ],
+    [
+     "77",
+     "-1",
+     "-1"
+    ]
+   ],
+   "rewards": {
+    "1": {
+     "cash": "30000",
+     "rp": "5000"
+    },
+    "7": {
+     "cash": "150000",
+     "rp": "20000"
+    },
+    "28": {
+     "cash": "750000",
+     "rp": "50000"
+    }
+   }
+  },
+  "casino": {
+   "exchange": "2880",
+   "free": "86400",
+   "spins_more": "0",
+   "spins_count": "1",
+   "spins_more_2": "1",
+   "spins_count_2": "2"
+  },
+  "casino_chips": {
+   "buy_regular": "20000",
+   "buy_penthouse": "50000",
+   "free": "1000"
+  },
+  "safes": {
+   "mc": {
+    "supplies": "4",
+    "capacity": "100000",
+    "income": "5000"
+   },
+   "nc": {
+    "capacity": "250000",
+    "popdiv": "-0.1",
+    "popdiv_staff": "-0.05",
+    "income": {
+     "100": "50000",
+     "95": "50000",
+     "90": "45000",
+     "85": "25000",
+     "80": "24000",
+     "75": "23000",
+     "70": "22000",
+     "65": "21000",
+     "60": "20000",
+     "55": "10000",
+     "50": "9500",
+     "45": "9000",
+     "40": "8500",
+     "35": "8000",
+     "30": "2500",
+     "25": "2200",
+     "20": "2000",
+     "15": "1800",
+     "10": "1600",
+     "5": "1500"
+    }
+   },
+   "arcade": {
+    "capacity": "100000",
+    "income": "5000"
+   },
+   "agency": {
+    "capacity": "250000",
+    "max_income": "20000"
+   },
+   "salvage": {
+    "capacity": [
+     "100000",
+     "250000"
+    ],
+    "popincrease": "25",
+    "popdecrease": "5",
+    "time": "2880000",
+    "timepopdecrease": "2880000",
+    "income": {
+     "100": "20000",
+     "90": "18000",
+     "80": "16000",
+     "70": "14000",
+     "60": "12000",
+     "50": "10000",
+     "40": "8000",
+     "30": "6000",
+     "20": "4000",
+     "10": "2000",
+     "0": "250"
+    },
+    "multiplier": "1.2",
+    "salvage_time": {
+     "robbery": [
+      "192",
+      "144"
+     ],
+     "towtruck": [
+      "96",
+      "48"
+     ]
+    }
+   },
+   "bo": {
+    "time": "48",
+    "time_targets": "3600",
+    "time_processing": [
+     "24",
+     "12",
+     "6"
+    ],
+    "income": {
+     "min": "5000",
+     "max": "10000"
+    },
+    "capacity": "100000"
+   },
+   "gf": {
+    "time": "2880000",
+    "income": {
+     "min": "1500",
+     "max": "2000"
+    },
+    "capacity": "100000"
+   },
+   "bunk": {
+    "time": "2880000",
+    "income": "50000",
+    "capacity": "50000"
+   },
+   "ss": {
+    "time": "2880",
+    "income": "50000",
+    "capacity": "50000"
+   },
+   "cw": {
+    "time": "2880000",
+    "capacity": "100000",
+    "income": {
+     "mc": {
+      "acid": "1250",
+      "bunk": "1500",
+      "coke": "1500",
+      "meth": "1250",
+      "cash": "1250",
+      "weed": "1000",
+      "docs": "1000"
+     },
+     "nc": "1500",
+     "arcade": "1500",
+     "as": "1500",
+     "agency": "1750",
+     "salvage": "1500",
+     "bo": "1500",
+     "gf": "1750",
+     "mh": "1500",
+     "ss": {
+      "small": "750",
+      "medium": "1250",
+      "large": "1500"
+     },
+     "sh": "1500",
+     "ie": "1500",
+     "cw": {
+      "init": "750",
+      "bost": "1500",
+      "cond": "15"
+     },
+     "ws": {
+      "init": "750",
+      "bost": "1500",
+      "cond": "15"
+     },
+     "hh": {
+      "init": "750",
+      "bost": "1500",
+      "cond": "15"
+     }
+    },
+    "heat": {
+     "faber": {
+      "1": "10",
+      "2": "10"
+     },
+     "laundry": {
+      "1": "5",
+      "2": "5"
+     },
+     "intime": {
+      "base": "10",
+      "reduct": "1"
+     }
+    },
+    "duffel": {
+     "capacity": "1000000",
+     "intime": {
+      "base": "10",
+      "reduct": "1"
+     },
+     "income": {
+      "cw": "35000",
+      "ws": "35000",
+      "hh": "35000"
+     }
+    }
+   }
+  },
+  "mc": {
+   "acid": {
+    "time": "135000",
+    "value": "1485",
+    "supdiv": "2",
+    "supdel": "600",
+    "capacity": "160",
+    "boost": "80",
+    "upgrades": {
+     "equip": {
+      "time": "45000",
+      "value": "610",
+      "supdiv": "1",
+      "mis": "10"
+     }
+    },
+    "mansion": "3"
+   },
+   "bunk": {
+    "time": "600000",
+    "value": "5000",
+    "supdiv": "10",
+    "supdel": "600",
+    "capacity": "100",
+    "r_time": "300000",
+    "r_supdiv": "2",
+    "r_capacity": "60",
+    "r_cost": "45000",
+    "upgrades": {
+     "equip": {
+      "time": "90000",
+      "value": "1000",
+      "supdiv": "5",
+      "r_time": "45000",
+      "r_supdiv": "1"
+     },
+     "staff": {
+      "time": "90000",
+      "value": "1000",
+      "r_time": "45000"
+     }
+    },
+    "sell_multipliers": {
+     "close": "1",
+     "far": "1.5"
+    },
+    "thresholds": {
+     "medium": "25",
+     "large": "50"
+    },
+    "mansion": "3"
+   },
+   "coke": {
+    "time": "3000000",
+    "value": "27000",
+    "supdiv": "50",
+    "supdel": "600",
+    "capacity": "10",
+    "upgrades": {
+     "equip": {
+      "time": "600000",
+      "value": "4000",
+      "supdiv": "25"
+     },
+     "staff": {
+      "time": "600000",
+      "value": "4000"
+     }
+    },
+    "sell_multipliers": {
+     "close": "1",
+     "far": "1.5"
+    },
+    "thresholds": {
+     "medium": "25",
+     "large": "50"
+    },
+    "mansion": "3"
+   },
+   "meth": {
+    "time": "1800000",
+    "value": "22950",
+    "supdiv": "24",
+    "supdel": "600",
+    "capacity": "20",
+    "upgrades": {
+     "equip": {
+      "time": "360000",
+      "value": "3400",
+      "supdiv": "12"
+     },
+     "staff": {
+      "time": "360000",
+      "value": "3400"
+     }
+    },
+    "sell_multipliers": {
+     "close": "1",
+     "far": "1.5"
+    },
+    "thresholds": {
+     "medium": "25",
+     "large": "50"
+    },
+    "mansion": "3"
+   },
+   "cash": {
+    "time": "720000",
+    "value": "4725",
+    "supdiv": "10",
+    "supdel": "600",
+    "capacity": "40",
+    "upgrades": {
+     "equip": {
+      "time": "120000",
+      "value": "700",
+      "supdiv": "5"
+     },
+     "staff": {
+      "time": "120000",
+      "value": "700"
+     }
+    },
+    "sell_multipliers": {
+     "close": "1",
+     "far": "1.5"
+    },
+    "thresholds": {
+     "medium": "25",
+     "large": "50"
+    },
+    "boost_value": "1.35",
+    "mansion": "3"
+   },
+   "weed": {
+    "time": "360000",
+    "value": "2025",
+    "supdiv": "4",
+    "supdel": "600",
+    "capacity": "80",
+    "upgrades": {
+     "equip": {
+      "time": "60000",
+      "value": "300",
+      "supdiv": "2"
+     },
+     "staff": {
+      "time": "60000",
+      "value": "300"
+     }
+    },
+    "sell_multipliers": {
+     "close": "1",
+     "far": "1.5"
+    },
+    "thresholds": {
+     "medium": "25",
+     "large": "50"
+    },
+    "boost_value": "1.35",
+    "mansion": "3"
+   },
+   "docs": {
+    "time": "300000",
+    "value": "1350",
+    "supdiv": "4",
+    "supdel": "600",
+    "capacity": "60",
+    "upgrades": {
+     "equip": {
+      "time": "60000",
+      "value": "200",
+      "supdiv": "2"
+     },
+     "staff": {
+      "time": "60000",
+      "value": "200"
+     }
+    },
+    "sell_multipliers": {
+     "close": "1",
+     "far": "1.5"
+    },
+    "thresholds": {
+     "medium": "25",
+     "large": "50"
+    },
+    "mansion": "3"
+   }
+  },
+  "mansion": {
+   "time": "86400"
+  },
+  "nc": {
+   "cargo": {
+    "time": "8400000",
+    "value": "10000",
+    "value_alt": "10000",
+    "capacity": "50"
+   },
+   "sport": {
+    "time": "4800000",
+    "value": "5000",
+    "value_alt": "5000",
+    "capacity": "100"
+   },
+   "south": {
+    "time": "14400000",
+    "value": "27000",
+    "value_alt": "27000",
+    "capacity": "10"
+   },
+   "pharm": {
+    "time": "7200000",
+    "value": "22950",
+    "value_alt": "11475",
+    "capacity": "20"
+   },
+   "caash": {
+    "time": "3600000",
+    "value": "4725",
+    "value_alt": "4725",
+    "capacity": "40"
+   },
+   "organ": {
+    "time": "2400000",
+    "value": "2025",
+    "value_alt": "2025",
+    "capacity": "80"
+   },
+   "print": {
+    "time": "1800000",
+    "value": "1350",
+    "value_alt": "1350",
+    "capacity": "60"
+   }
+  },
+  "nc_time_multiplier": "0.5",
+  "nc_delivery": {
+   "mule": "0.25",
+   "pounder": "0.5"
+  },
+  "ss": {
+   "value": {
+    "1": {
+     "tresh": "1",
+     "value": "10000"
+    },
+    "2": {
+     "tresh": "2",
+     "value": "11000"
+    },
+    "3": {
+     "tresh": "3",
+     "value": "12000"
+    },
+    "4": {
+     "tresh": "4",
+     "value": "13000"
+    },
+    "5": {
+     "tresh": "6",
+     "value": "13500"
+    },
+    "6": {
+     "tresh": "8",
+     "value": "14000"
+    },
+    "7": {
+     "tresh": "10",
+     "value": "14500"
+    },
+    "8": {
+     "tresh": "15",
+     "value": "15000"
+    },
+    "9": {
+     "tresh": "20",
+     "value": "15500"
+    },
+    "10": {
+     "tresh": "25",
+     "value": "16000"
+    },
+    "11": {
+     "tresh": "30",
+     "value": "16500"
+    },
+    "12": {
+     "tresh": "35",
+     "value": "17000"
+    },
+    "13": {
+     "tresh": "40",
+     "value": "17500"
+    },
+    "14": {
+     "tresh": "45",
+     "value": "17750"
+    },
+    "15": {
+     "tresh": "50",
+     "value": "18000"
+    },
+    "16": {
+     "tresh": "60",
+     "value": "18250"
+    },
+    "17": {
+     "tresh": "70",
+     "value": "18500"
+    },
+    "18": {
+     "tresh": "80",
+     "value": "18750"
+    },
+    "19": {
+     "tresh": "90",
+     "value": "19000"
+    },
+    "20": {
+     "tresh": "100",
+     "value": "19500"
+    },
+    "21": {
+     "tresh": "111",
+     "value": "20000"
+    }
+   },
+   "rare": [
+    "125000",
+    "115000",
+    "135000",
+    "105000",
+    "95000",
+    "150000"
+   ],
+   "lupe": "48",
+   "buyers": {
+    "1": "100",
+    "2": "50",
+    "3": "20"
+   }
+  },
+  "sh": {
+   "narcos": {
+    "value": "30000",
+    "tresh": "25",
+    "multiplier": "0.35"
+   },
+   "chemic": {
+    "value": "30000",
+    "tresh": "25",
+    "multiplier": "0.35"
+   },
+   "medsup": {
+    "value": "30000",
+    "tresh": "25",
+    "multiplier": "0.35"
+   },
+   "animal": {
+    "value": "30000",
+    "tresh": "10",
+    "multiplier": "0.12"
+   },
+   "artant": {
+    "value": "30000",
+    "tresh": "10",
+    "multiplier": "0.12"
+   },
+   "jewgem": {
+    "value": "30000",
+    "tresh": "10",
+    "multiplier": "0.12"
+   },
+   "tobalc": {
+    "value": "30000",
+    "tresh": "5",
+    "multiplier": "0.05"
+   },
+   "cgoods": {
+    "value": "30000",
+    "tresh": "5",
+    "multiplier": "0.05"
+   }
+  },
+  "sh_mixed": "30000",
+  "sh_rooster": "48",
+  "sh_boost_value": "1.1",
+  "ie": {
+   "time": {
+    "1": "1200000",
+    "2": "1680000",
+    "3": "2340000",
+    "4": "2880000"
+   },
+   "income": {
+    "1": "15000",
+    "2": "25000",
+    "3": "40000"
+   },
+   "multiplier": "2",
+   "cost": "0.5",
+   "multiplier_mid": "1.5",
+   "cost_mid": "0.25",
+   "cost_low": "0",
+   "collections": {
+    "wealthy": "20000",
+    "declasse": "35000",
+    "elegant": "50000",
+    "dangerous": "35000",
+    "rally": "50000",
+    "tropical": "50000",
+    "matte": "35000",
+    "pretty": "35000",
+    "muscular": "20000",
+    "metal": "50000"
+   }
+  },
+  "hdbc": {
+   "acid": {
+    "per": "2.5",
+    "cap": "20"
+   },
+   "bunk": {
+    "per": "2.5",
+    "cap": "20"
+   },
+   "mc": {
+    "per": "2.5",
+    "cap": "20"
+   },
+   "nc": {
+    "per": "2.5",
+    "cap": "20",
+    "cutPer": "0.1"
+   },
+   "wh": {
+    "per": "2.5",
+    "cap": "20"
+   },
+   "sh": {
+    "per": "2.5",
+    "cap": "20",
+    "cutPer": "0.025",
+    "cutCap": "30000"
+   },
+   "ie": {
+    "per": "2.5",
+    "cap": "20"
+   }
+  }
+ },
+ "plus": {
+  "weeklies": {
+   "obj": "46",
+   "target": "2",
+   "reward": {
+    "cash": "100000",
+    "rp": "10000"
+   }
+  },
+  "dailies": {
+   "obj": [
+    [
+     "68",
+     "-1",
+     "-1"
+    ],
+    [
+     "214",
+     "-1",
+     "-1"
+    ],
+    [
+     "2",
+     "-1",
+     "-1"
+    ],
+    [
+     "38",
+     "-1",
+     "-1"
+    ],
+    [
+     "90",
+     "-1",
+     "-1"
+    ],
+    [
+     "99",
+     "-1",
+     "-1"
+    ],
+    [
+     "77",
+     "-1",
+     "-1"
+    ]
+   ],
+   "rewards": {
+    "1": {
+     "cash": "30000",
+     "rp": "5000"
+    },
+    "7": {
+     "cash": "150000",
+     "rp": "20000"
+    },
+    "28": {
+     "cash": "750000",
+     "rp": "50000"
+    }
+   }
+  },
+  "casino": {
+   "exchange": "2880",
+   "free": "86400",
+   "spins_more": "0",
+   "spins_count": "1",
+   "spins_more_2": "1",
+   "spins_count_2": "2"
+  },
+  "casino_chips": {
+   "buy_regular": "20000",
+   "buy_penthouse": "50000",
+   "free": "1000"
+  },
+  "safes": {
+   "mc": {
+    "supplies": "4",
+    "capacity": "100000",
+    "income": "5000"
+   },
+   "nc": {
+    "capacity": "250000",
+    "popdiv": "-0.1",
+    "popdiv_staff": "-0.05",
+    "income": {
+     "100": "50000",
+     "95": "50000",
+     "90": "45000",
+     "85": "25000",
+     "80": "24000",
+     "75": "23000",
+     "70": "22000",
+     "65": "21000",
+     "60": "20000",
+     "55": "10000",
+     "50": "9500",
+     "45": "9000",
+     "40": "8500",
+     "35": "8000",
+     "30": "2500",
+     "25": "2200",
+     "20": "2000",
+     "15": "1800",
+     "10": "1600",
+     "5": "1500"
+    }
+   },
+   "arcade": {
+    "capacity": "100000",
+    "income": "5000"
+   },
+   "agency": {
+    "capacity": "250000",
+    "max_income": "20000"
+   },
+   "salvage": {
+    "capacity": [
+     "100000",
+     "250000"
+    ],
+    "popincrease": "25",
+    "popdecrease": "5",
+    "time": "2880000",
+    "timepopdecrease": "2880000",
+    "income": {
+     "100": "20000",
+     "90": "18000",
+     "80": "16000",
+     "70": "14000",
+     "60": "12000",
+     "50": "10000",
+     "40": "8000",
+     "30": "6000",
+     "20": "4000",
+     "10": "2000",
+     "0": "250"
+    },
+    "multiplier": "1.2",
+    "salvage_time": {
+     "robbery": [
+      "192",
+      "144"
+     ],
+     "towtruck": [
+      "96",
+      "48"
+     ]
+    }
+   },
+   "bo": {
+    "time": "48",
+    "time_targets": "3600",
+    "time_processing": [
+     "24",
+     "12",
+     "6"
+    ],
+    "income": {
+     "min": "5000",
+     "max": "10000"
+    },
+    "capacity": "100000"
+   },
+   "gf": {
+    "time": "2880000",
+    "income": {
+     "min": "1500",
+     "max": "2000"
+    },
+    "capacity": "100000"
+   },
+   "bunk": {
+    "time": "2880000",
+    "income": "50000",
+    "capacity": "50000"
+   },
+   "ss": {
+    "time": "2880",
+    "income": "50000",
+    "capacity": "50000"
+   },
+   "cw": {
+    "time": "2880000",
+    "capacity": "100000",
+    "income": {
+     "mc": {
+      "acid": "1250",
+      "bunk": "1500",
+      "coke": "1500",
+      "meth": "1250",
+      "cash": "1250",
+      "weed": "1000",
+      "docs": "1000"
+     },
+     "nc": "1500",
+     "arcade": "1500",
+     "as": "1500",
+     "agency": "1750",
+     "salvage": "1500",
+     "bo": "1500",
+     "gf": "1750",
+     "mh": "1500",
+     "ss": {
+      "small": "750",
+      "medium": "1250",
+      "large": "1500"
+     },
+     "sh": "1500",
+     "ie": "1500",
+     "cw": {
+      "init": "750",
+      "bost": "1500",
+      "cond": "15"
+     },
+     "ws": {
+      "init": "750",
+      "bost": "1500",
+      "cond": "15"
+     },
+     "hh": {
+      "init": "750",
+      "bost": "1500",
+      "cond": "15"
+     }
+    },
+    "heat": {
+     "faber": {
+      "1": "10",
+      "2": "10"
+     },
+     "laundry": {
+      "1": "5",
+      "2": "5"
+     },
+     "intime": {
+      "base": "10",
+      "reduct": "1"
+     }
+    },
+    "duffel": {
+     "capacity": "1000000",
+     "intime": {
+      "base": "10",
+      "reduct": "1"
+     },
+     "income": {
+      "cw": "35000",
+      "ws": "35000",
+      "hh": "35000"
+     }
+    }
+   }
+  },
+  "mc": {
+   "acid": {
+    "time": "135000",
+    "value": "1485",
+    "supdiv": "2",
+    "supdel": "600",
+    "capacity": "160",
+    "boost": "80",
+    "upgrades": {
+     "equip": {
+      "time": "45000",
+      "value": "610",
+      "supdiv": "1",
+      "mis": "10"
+     }
+    },
+    "mansion": "3"
+   },
+   "bunk": {
+    "time": "600000",
+    "value": "5000",
+    "supdiv": "10",
+    "supdel": "600",
+    "capacity": "100",
+    "r_time": "300000",
+    "r_supdiv": "2",
+    "r_capacity": "60",
+    "r_cost": "45000",
+    "upgrades": {
+     "equip": {
+      "time": "90000",
+      "value": "1000",
+      "supdiv": "5",
+      "r_time": "45000",
+      "r_supdiv": "1"
+     },
+     "staff": {
+      "time": "90000",
+      "value": "1000",
+      "r_time": "45000"
+     }
+    },
+    "sell_multipliers": {
+     "close": "1",
+     "far": "1.5"
+    },
+    "thresholds": {
+     "medium": "25",
+     "large": "50"
+    },
+    "mansion": "3"
+   },
+   "coke": {
+    "time": "3000000",
+    "value": "27000",
+    "supdiv": "50",
+    "supdel": "600",
+    "capacity": "10",
+    "upgrades": {
+     "equip": {
+      "time": "600000",
+      "value": "4000",
+      "supdiv": "25"
+     },
+     "staff": {
+      "time": "600000",
+      "value": "4000"
+     }
+    },
+    "sell_multipliers": {
+     "close": "1",
+     "far": "1.5"
+    },
+    "thresholds": {
+     "medium": "25",
+     "large": "50"
+    },
+    "mansion": "3"
+   },
+   "meth": {
+    "time": "1800000",
+    "value": "22950",
+    "supdiv": "24",
+    "supdel": "600",
+    "capacity": "20",
+    "upgrades": {
+     "equip": {
+      "time": "360000",
+      "value": "3400",
+      "supdiv": "12"
+     },
+     "staff": {
+      "time": "360000",
+      "value": "3400"
+     }
+    },
+    "sell_multipliers": {
+     "close": "1",
+     "far": "1.5"
+    },
+    "thresholds": {
+     "medium": "25",
+     "large": "50"
+    },
+    "mansion": "3"
+   },
+   "cash": {
+    "time": "720000",
+    "value": "4725",
+    "supdiv": "10",
+    "supdel": "600",
+    "capacity": "40",
+    "upgrades": {
+     "equip": {
+      "time": "120000",
+      "value": "700",
+      "supdiv": "5"
+     },
+     "staff": {
+      "time": "120000",
+      "value": "700"
+     }
+    },
+    "sell_multipliers": {
+     "close": "1",
+     "far": "1.5"
+    },
+    "thresholds": {
+     "medium": "25",
+     "large": "50"
+    },
+    "boost_value": "1.35",
+    "mansion": "3"
+   },
+   "weed": {
+    "time": "360000",
+    "value": "2025",
+    "supdiv": "4",
+    "supdel": "600",
+    "capacity": "80",
+    "upgrades": {
+     "equip": {
+      "time": "60000",
+      "value": "300",
+      "supdiv": "2"
+     },
+     "staff": {
+      "time": "60000",
+      "value": "300"
+     }
+    },
+    "sell_multipliers": {
+     "close": "1",
+     "far": "1.5"
+    },
+    "thresholds": {
+     "medium": "25",
+     "large": "50"
+    },
+    "boost_value": "1.35",
+    "mansion": "3"
+   },
+   "docs": {
+    "time": "300000",
+    "value": "1350",
+    "supdiv": "4",
+    "supdel": "600",
+    "capacity": "60",
+    "upgrades": {
+     "equip": {
+      "time": "60000",
+      "value": "200",
+      "supdiv": "2"
+     },
+     "staff": {
+      "time": "60000",
+      "value": "200"
+     }
+    },
+    "sell_multipliers": {
+     "close": "1",
+     "far": "1.5"
+    },
+    "thresholds": {
+     "medium": "25",
+     "large": "50"
+    },
+    "mansion": "3"
+   }
+  },
+  "mansion": {
+   "time": "86400"
+  },
+  "nc": {
+   "cargo": {
+    "time": "8400000",
+    "value": "10000",
+    "value_alt": "10000",
+    "capacity": "50"
+   },
+   "sport": {
+    "time": "4800000",
+    "value": "5000",
+    "value_alt": "5000",
+    "capacity": "100"
+   },
+   "south": {
+    "time": "14400000",
+    "value": "27000",
+    "value_alt": "27000",
+    "capacity": "10"
+   },
+   "pharm": {
+    "time": "7200000",
+    "value": "22950",
+    "value_alt": "11475",
+    "capacity": "20"
+   },
+   "caash": {
+    "time": "3600000",
+    "value": "4725",
+    "value_alt": "4725",
+    "capacity": "40"
+   },
+   "organ": {
+    "time": "2400000",
+    "value": "2025",
+    "value_alt": "2025",
+    "capacity": "80"
+   },
+   "print": {
+    "time": "1800000",
+    "value": "1350",
+    "value_alt": "1350",
+    "capacity": "60"
+   }
+  },
+  "nc_time_multiplier": "0.5",
+  "nc_delivery": {
+   "mule": "0.25",
+   "pounder": "0.5"
+  },
+  "ss": {
+   "value": {
+    "1": {
+     "tresh": "1",
+     "value": "10000"
+    },
+    "2": {
+     "tresh": "2",
+     "value": "11000"
+    },
+    "3": {
+     "tresh": "3",
+     "value": "12000"
+    },
+    "4": {
+     "tresh": "4",
+     "value": "13000"
+    },
+    "5": {
+     "tresh": "6",
+     "value": "13500"
+    },
+    "6": {
+     "tresh": "8",
+     "value": "14000"
+    },
+    "7": {
+     "tresh": "10",
+     "value": "14500"
+    },
+    "8": {
+     "tresh": "15",
+     "value": "15000"
+    },
+    "9": {
+     "tresh": "20",
+     "value": "15500"
+    },
+    "10": {
+     "tresh": "25",
+     "value": "16000"
+    },
+    "11": {
+     "tresh": "30",
+     "value": "16500"
+    },
+    "12": {
+     "tresh": "35",
+     "value": "17000"
+    },
+    "13": {
+     "tresh": "40",
+     "value": "17500"
+    },
+    "14": {
+     "tresh": "45",
+     "value": "17750"
+    },
+    "15": {
+     "tresh": "50",
+     "value": "18000"
+    },
+    "16": {
+     "tresh": "60",
+     "value": "18250"
+    },
+    "17": {
+     "tresh": "70",
+     "value": "18500"
+    },
+    "18": {
+     "tresh": "80",
+     "value": "18750"
+    },
+    "19": {
+     "tresh": "90",
+     "value": "19000"
+    },
+    "20": {
+     "tresh": "100",
+     "value": "19500"
+    },
+    "21": {
+     "tresh": "111",
+     "value": "20000"
+    }
+   },
+   "rare": [
+    "125000",
+    "115000",
+    "135000",
+    "105000",
+    "95000",
+    "150000"
+   ],
+   "lupe": "48",
+   "buyers": {
+    "1": "100",
+    "2": "50",
+    "3": "20"
+   }
+  },
+  "sh": {
+   "narcos": {
+    "value": "30000",
+    "tresh": "25",
+    "multiplier": "0.35"
+   },
+   "chemic": {
+    "value": "30000",
+    "tresh": "25",
+    "multiplier": "0.35"
+   },
+   "medsup": {
+    "value": "30000",
+    "tresh": "25",
+    "multiplier": "0.35"
+   },
+   "animal": {
+    "value": "30000",
+    "tresh": "10",
+    "multiplier": "0.12"
+   },
+   "artant": {
+    "value": "30000",
+    "tresh": "10",
+    "multiplier": "0.12"
+   },
+   "jewgem": {
+    "value": "30000",
+    "tresh": "10",
+    "multiplier": "0.12"
+   },
+   "tobalc": {
+    "value": "30000",
+    "tresh": "5",
+    "multiplier": "0.05"
+   },
+   "cgoods": {
+    "value": "30000",
+    "tresh": "5",
+    "multiplier": "0.05"
+   }
+  },
+  "sh_mixed": "30000",
+  "sh_rooster": "48",
+  "sh_boost_value": "1.1",
+  "ie": {
+   "time": {
+    "1": "1200000",
+    "2": "1680000",
+    "3": "2340000",
+    "4": "2880000"
+   },
+   "income": {
+    "1": "30000",
+    "2": "50000",
+    "3": "80000"
+   },
+   "multiplier": "2",
+   "cost": "0.5",
+   "multiplier_mid": "1.5",
+   "cost_mid": "0.25",
+   "cost_low": "0",
+   "collections": {
+    "wealthy": "40000",
+    "declasse": "70000",
+    "elegant": "100000",
+    "dangerous": "70000",
+    "rally": "100000",
+    "tropical": "100000",
+    "matte": "70000",
+    "pretty": "70000",
+    "muscular": "40000",
+    "metal": "100000"
+   }
+  },
+  "hdbc": {
+   "acid": {
+    "per": "2.5",
+    "cap": "20"
+   },
+   "bunk": {
+    "per": "2.5",
+    "cap": "20"
+   },
+   "mc": {
+    "per": "2.5",
+    "cap": "20"
+   },
+   "nc": {
+    "per": "2.5",
+    "cap": "20",
+    "cutPer": "0.1"
+   },
+   "wh": {
+    "per": "2.5",
+    "cap": "20"
+   },
+   "sh": {
+    "per": "2.5",
+    "cap": "20",
+    "cutPer": "0.025",
+    "cutCap": "30000"
+   },
+   "ie": {
+    "per": "2.5",
+    "cap": "20"
+   }
+  }
+ }
+}
