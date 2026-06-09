@@ -3,6 +3,7 @@ import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { getReference, findBusiness } from "../data/reference.js";
 import { loadState } from "../lib/state.js";
 import { getWeeklyUpdate } from "../clients/newswire.js";
+import { getEconomics, BUSINESS_KEYS } from "../clients/toolkit.js";
 import { withCache } from "../lib/cache.js";
 import {
   nextDailyReset,
@@ -30,6 +31,21 @@ function currentFill(
   if (!lastResupplyAt) return stockFractionAtResupply;
   const elapsedMin = (Date.now() - new Date(lastResupplyAt).getTime()) / 60000;
   return Math.min(1, stockFractionAtResupply + elapsedMin / fillMinutes);
+}
+
+/** Max high-demand public-lobby bonus % for a reference business, via econ data. */
+function highDemandCapPct(idOrName: string): number {
+  const q = idOrName.toLowerCase();
+  const key = Object.keys(BUSINESS_KEYS).find(
+    (k) => q.includes(k) || BUSINESS_KEYS[k].toLowerCase().includes(q),
+  );
+  const fallback = q.includes("gun")
+    ? "bunk"
+    : q.includes("coke") || q.includes("cocaine")
+      ? "coke"
+      : undefined;
+  const econ = getEconomics(key ?? fallback ?? "");
+  return econ?.maxHighDemandPct ?? 50;
 }
 
 export function registerPlannerTool(server: McpServer): void {
@@ -133,9 +149,15 @@ export function registerPlannerTool(server: McpServer): void {
         const overLimit = value > b.soloSellLimitValue;
         if (fill >= 0.6 || overLimit) {
           const mult = bonusMultiplier(b.name);
+          const hdPct = highDemandCapPct(b.id);
+          const publicValue = Math.round(value * (1 + hdPct / 100) * mult);
           actions.push({
             title: `Sell ${b.name}`,
-            why: `${Math.round(fill * 100)}% full (~${money(value)})${mult > 1 ? " — 2x bonus this week!" : ""}${overLimit ? " — over the solo 1-vehicle limit" : ""}`,
+            why:
+              `${Math.round(fill * 100)}% full (~${money(value * mult)} solo/private)` +
+              `${mult > 1 ? " — 2x bonus this week!" : ""}` +
+              `${overLimit ? " — over the solo 1-vehicle limit" : ""}` +
+              ` · up to ~${money(publicValue)} in a full public lobby (+${hdPct}% high-demand, grief risk)`,
             estPayout: value * mult,
             estMinutes: 12,
             urgency: overLimit ? "high" : "normal",
@@ -216,6 +238,10 @@ export function registerPlannerTool(server: McpServer): void {
       footerBits.push(
         `Daily reset in ${formatDuration(dailyIn)} · weekly reset in ${formatDuration(weeklyIn)}.`,
       );
+      if (plan.some((a) => a.title.startsWith("Sell ")))
+        footerBits.push(
+          "Selling? Sell in an invite-only session to dodge griefers, or take a full public lobby for up to +50% high-demand. See gta-sell-strategy for per-business tips.",
+        );
       if (weeklyTitle)
         footerBits.push(
           `This week: ${weeklyTitle}${weeklyStale ? " (cached)" : ""}.${weeklySource ? ` ${weeklySource}` : ""}`,

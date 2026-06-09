@@ -13,6 +13,7 @@ interface FetchOpts {
   timeoutMs?: number;
   retries?: number;
   accept?: string;
+  userAgent?: string;
 }
 
 function looksLikeCloudflare(status: number, body: string): boolean {
@@ -32,7 +33,7 @@ async function once(url: string, opts: FetchOpts): Promise<string> {
   try {
     const res = await fetch(url, {
       headers: {
-        "User-Agent": config.userAgent,
+        "User-Agent": opts.userAgent ?? config.userAgent,
         Accept: opts.accept ?? "application/json, text/plain, */*",
       },
       signal: controller.signal,

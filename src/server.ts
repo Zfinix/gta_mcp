@@ -5,12 +5,14 @@ import { registerMethodTools } from "./tools/methods.js";
 import { registerBusinessTools } from "./tools/business.js";
 import { registerCollectibleTools } from "./tools/collectibles.js";
 import { registerLiveDataTools } from "./tools/liveData.js";
+import { registerCommunityTools } from "./tools/community.js";
 import { registerPlannerTool } from "./tools/planner.js";
 import { registerMapTools } from "./tools/map.js";
 import { registerPropertyTools } from "./tools/properties.js";
 import { registerCalculatorTools } from "./tools/calculators.js";
 import { registerEconomyTools } from "./tools/economy.js";
 import { registerRenderTools } from "./tools/render.js";
+import { registerSellStrategyTool } from "./tools/sellStrategy.js";
 
 const server = new McpServer(
   { name: "gta-mcp-server", version: "1.0.0" },
@@ -18,6 +20,7 @@ const server = new McpServer(
 );
 
 registerLiveDataTools(server);
+registerCommunityTools(server);
 registerCollectibleTools(server);
 registerMethodTools(server);
 registerBusinessTools(server);
@@ -26,6 +29,7 @@ registerCalculatorTools(server);
 registerEconomyTools(server);
 registerMapTools(server);
 registerRenderTools(server);
+registerSellStrategyTool(server);
 registerPlannerTool(server);
 
 async function main(): Promise<void> {

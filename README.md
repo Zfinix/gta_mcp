@@ -13,6 +13,8 @@ A two-part GTA Online money-making assistant:
 - `gta-weekly-bonuses` — this week's 2x/3x event, podium, discounts (Newswire, best-effort).
 - `gta-tunables-status` — per-platform tunables update timestamps (gtaweb, needs browser).
 - `gta-daily-collectibles` — today's daily collectible income table + live tunables freshness.
+- `gta-community-pulse` — what r/gtaonline is talking about now: top/hot threads + pinned megathreads (community sentiment, not authoritative for the multiplier).
+- `gta-community-search` — search r/gtaonline for community takes on a specific method/business/topic.
 
 **Money methods & reference**
 
@@ -78,7 +80,7 @@ Register in Claude Desktop / Cursor (`mcpServers`):
 ## Data sources & the browser dependency
 
 - **Offline (no network/browser):** methods, businesses, properties, calculators, collectible rewards, the planner, map category catalog, and the **economy data** (bundled snapshot of gtaweb's `TOOLKIT_DATA`). These always work.
-- **Browser-assisted (the `browse` CLI + local Chrome):** `gta-map-screenshot` and the live map/data tools open gtalens/gtaweb. Set `BROWSE_FALLBACK=0` to disable; those tools then degrade to returning the map URL. The map screenshots are captured live from gtalens.com.
+- **Browser-assisted (the `browse` CLI + local Chrome):** `gta-map-screenshot` and the live map/data tools open gtalens/gtaweb. The **community tools** (`gta-community-pulse`, `gta-community-search`) pull r/gtaonline: they try Reddit's public `.json` endpoints first, and since Reddit now 403s plain HTTP, fall back to the browser session (same as gtaweb). Set `BROWSE_FALLBACK=0` to disable; those tools then degrade to returning the source URL. The map screenshots are captured live from gtalens.com.
 - **Refresh bundled data** (uses `browse` once, keeps runtime offline):
   - `npm run refresh:toolkit` — re-pull the gtaweb economy snapshot (`data/toolkit-data.json`).
   - `npm run refresh:map` — regenerate the map category catalog (`data/map-categories.json`).
